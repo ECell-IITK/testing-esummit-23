@@ -155,10 +155,12 @@ body::-webkit-scrollbar-thumb:active {
     display: flex;
     z-index: 2;
 }
-.header-nav li{
+
+.header-nav li {
     overflow: hidden;
 }
-.header-nav li::after{
+
+.header-nav li::after {
     content: "";
     font-size: 20px;
     display: block;
@@ -167,6 +169,7 @@ body::-webkit-scrollbar-thumb:active {
     height: 2px;
     border-bottom: 1px solid #9f7ee6;
 }
+
 .header-nav a {
     text-decoration: none;
     margin-left: 24px;
@@ -239,6 +242,8 @@ body::-webkit-scrollbar-thumb:active {
 @media screen and (max-width:1200px) {
     .hero {
         max-width: 800px;
+        margin: auto;
+        height: 800px;
     }
 }
 
@@ -375,6 +380,7 @@ body::-webkit-scrollbar-thumb:active {
     align-items: center;
 
 }
+
 video::-webkit-media-controls {
     visibility: hidden;
 }
@@ -383,11 +389,15 @@ video::-webkit-media-controls-enclosure {
     visibility: visible;
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:600px) {
     .introduction-video {
         margin: 297px auto 0;
         left: calc(50% - 160px);
         width: 320px;
+    }
+
+    .hero {
+        height: 750px;
     }
 }
 
@@ -442,7 +452,7 @@ video::-webkit-media-controls-enclosure {
 
 }
 
-.about img{
+.about img {
     position: absolute;
     top: 0;
     width: 1400px;
@@ -469,7 +479,7 @@ video::-webkit-media-controls-enclosure {
     z-index: 2;
 }
 
-.inquisition-of-infinity{
+.inquisition-of-infinity {
     padding-top: 30px;
 }
 
@@ -478,18 +488,22 @@ video::-webkit-media-controls-enclosure {
     background: linear-gradient(to right, #9757CF 21%, #864AFF 50%, #7A5BCF 73%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
+
 }
 
 @media screen and (max-width:600px) {
+
     .what-is-esummit h1,
-.inquisition-of-infinity h1 {
-    font-size: 34px;
-    line-height: 34px;
-}
-.what-is-esummit,.inquisition-of-infinity{
-    font-size: 14px;
-}
+    .inquisition-of-infinity h1 {
+        font-size: 34px;
+        line-height: 34px;
+    }
+
+    .what-is-esummit,
+    .inquisition-of-infinity {
+        font-size: 14px;
+        padding: 20px;
+    }
 }
 
 /* footer */

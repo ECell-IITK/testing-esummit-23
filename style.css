@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 * {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -11,10 +13,12 @@ body {
     position: relative;
     height: 100%;
 }
-html{
+
+html {
     overflow-x: hidden;
     height: 100vh;
 }
+
 body {
     background-color: #030014;
     color: #fff;
@@ -23,43 +27,45 @@ body {
     width: 100vw;
     /* height: 100vh; */
 }
+
 /* Firefox */
 body {
     scrollbar-width: thin;
     scrollbar-color: #442962b9 #CCE5E6;
-  }
-  
-  /* Chrome, Edge and Safari */
-  body::-webkit-scrollbar {
+}
+
+/* Chrome, Edge and Safari */
+body::-webkit-scrollbar {
     width: 5px;
     width: 5px;
-  }
-  body::-webkit-scrollbar-track {
+}
+
+body::-webkit-scrollbar-track {
     border-radius: 5px;
     background-color: #282a7c00;
-  }
-  
-  body::-webkit-scrollbar-track:hover {
+}
+
+body::-webkit-scrollbar-track:hover {
     background-color: #b8c0c200;
-  }
-  
-  body::-webkit-scrollbar-track:active {
+}
+
+body::-webkit-scrollbar-track:active {
     background-color: #80949900;
-  }
-  
-  body::-webkit-scrollbar-thumb {
+}
+
+body::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background-color: #533c7989;
-  }
-  
-  body::-webkit-scrollbar-thumb:hover {
+}
+
+body::-webkit-scrollbar-thumb:hover {
     background-color: #533c7989;
-  }
-  
-  body::-webkit-scrollbar-thumb:active {
+}
+
+body::-webkit-scrollbar-thumb:active {
     background-color: #533c7989;
-  }
-  
+}
+
 
 .header {
     padding: 0 20px;
@@ -94,12 +100,14 @@ body {
     padding: 26px 0;
     position: relative;
 }
-.header-toggle{
+
+.header-toggle {
     margin-left: 18px;
     padding: 5px;
     cursor: pointer;
     z-index: 90;
 }
+
 .header-toggle div {
     width: 20px;
     height: 1.5px;
@@ -107,14 +115,16 @@ body {
     border-radius: 500px;
     transition: all .3s ease-in-out;
 }
+
 .header-toggle div:not(:last-child) {
     margin-bottom: 5px;
 }
+
 .header-nav {
     /* visibility: hidden;   */
-    list-style:none;
+    list-style: none;
     transform: translateX(100%);
-    width: 00vw;
+    /* width: 00vw; */
     height: 100vh;
     border: 0;
     border-radius: 0;
@@ -127,21 +137,37 @@ body {
     position: fixed;
     top: 0;
     z-index: 1;
-    background: rgba(3,0,20,.9);
+    background: rgba(3, 0, 20, .9);
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
+    visibility: hidden;
     overflow: hidden;
 }
-.header-nav-active{
+
+.header-nav-active {
     transform: translate(0%);
     width: 100vw;
+    visibility: visible;
 }
-.header-nav div{
+
+.header-nav div {
     align-items: center;
     display: flex;
     z-index: 2;
 }
-.header-nav a{
+.header-nav li{
+    overflow: hidden;
+}
+.header-nav li::after{
+    content: "";
+    font-size: 20px;
+    display: block;
+    width: 80%;
+    margin-left: 12px;
+    height: 2px;
+    border-bottom: 1px solid #9f7ee6;
+}
+.header-nav a {
     text-decoration: none;
     margin-left: 24px;
     color: whitesmoke;
@@ -153,14 +179,17 @@ body {
 
 
 .header-toggle-active div:nth-child(1) {
-    transform: rotate(45deg) translate(5px,5px);
+    transform: rotate(45deg) translate(5px, 5px);
 }
+
 .header-toggle-active div:nth-child(2) {
     opacity: 0;
 }
+
 .header-toggle-active div:nth-child(3) {
-    transform: rotate(-45deg) translate(4px,-5px);
+    transform: rotate(-45deg) translate(4px, -5px);
 }
+
 /* .container-lg {
     max-width: 1296px;
 } */
@@ -204,6 +233,13 @@ body {
 .hero {
     padding-top: 173px;
     position: relative;
+    height: 1000px;
+}
+
+@media screen and (max-width:1200px) {
+    .hero {
+        max-width: 800px;
+    }
 }
 
 .section-header-title-desktop {
@@ -275,11 +311,13 @@ body {
     font-feature-settings: unset;
     font-weight: 500;
 }
+
 @media screen and (max-width:600px) {
-    .section-header-title-desktop{
+    .section-header-title-desktop {
         font-size: 60px;
     }
 }
+
 .hero-description {
     color: #efedfdb3;
     font-size: 18px;
@@ -304,13 +342,15 @@ body {
     transform: translate(-50%);
     width: 1440px;
 }
-@media (max-width: 1248px){
+
+@media (max-width: 1248px) {
     .hero-black-hole {
         width: 1028px;
         height: 578px;
         top: 138px;
     }
 }
+
 .lazy-video {
     opacity: 1;
     transition: .75s cubic-bezier(.6, .6, 0, 1) opacity;
@@ -332,11 +372,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
+
 @media screen and (max-width:1200px) {
-    .introduction-video{
-        margin:297px auto 0;
+    .introduction-video {
+        margin: 297px auto 0;
         left: calc(50% - 160px);
         width: 320px;
     }
@@ -368,13 +409,90 @@ body {
     border: 1px solid rgba(226, 174, 238, 0.37);
     overflow: hidden;
 }
-.introduction-video-inner video{
+
+.introduction-video-inner video {
     transform: translateY(-140px);
     width: 100%;
     opacity: 0.6;
 }
+
 @media screen and (max-width:1200px) {
-    .introduction-video-inner video{
+    .introduction-video-inner video {
         transform: translateY(0px);
-    } 
+    }
+}
+
+/* about */
+.about {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    /* background: url(./images/q-6c12dbae.png);
+    background-size: cover;
+    background-repeat: no-repeat; */
+
+}
+
+.about img{
+    position: absolute;
+    top: 0;
+    width: 1400px;
+    left: calc(50% - 700px);
+}
+
+.what-is-esummit h1,
+.inquisition-of-infinity h1 {
+    font-size: 46px;
+    line-height: 64px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.what-is-esummit,
+.inquisition-of-infinity {
+    color: #efedfdb3;
+    margin: 12px auto 0;
+    max-width: 600px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.inquisition-of-infinity{
+    padding-top: 30px;
+}
+
+.inquisition-of-infinity h1 {
+    background: #9757CF;
+    background: linear-gradient(to right, #9757CF 21%, #864AFF 50%, #7A5BCF 73%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+@media screen and (max-width:600px) {
+    .what-is-esummit h1,
+.inquisition-of-infinity h1 {
+    font-size: 34px;
+    line-height: 34px;
+}
+.what-is-esummit,.inquisition-of-infinity{
+    font-size: 14px;
+}
+}
+
+/* footer */
+.footer {
+    background: radial-gradient(50% 44.06% at 50% 0%, rgba(147, 130, 255, .08) 0%, rgba(147, 130, 255, 0) 100%), #030014;
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    padding: 0 32px;
+}
+
+.footer-copyright {
+    text-align: center;
+    color: #a487fa;
 }

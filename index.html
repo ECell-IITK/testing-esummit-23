@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESUMMIT'23</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="particle.css">
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 </head>
 
 <body>
@@ -15,11 +18,11 @@
                 <!-- <div class="logo-with-name-name">Reflect</div> -->
             </a><!--/qv-->
             <ul class="header-nav">
-                <li><a href="">About Us</a></li>
-                <li><a href="">Get Merchandise</a></li>
-                <li><a href="">Speakers</a></li>
-                <li><a href="">Contact Us</a></li>
-                <li><a href="">Main Site</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Get Merchandise</a></li>
+                <li><a href="#">Speakers</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Main Site</a></li>
             </ul>
             <div class="header-actions">
                 <!-- <a href="" class="login">Login</a> -->
@@ -101,10 +104,37 @@
 
         </div>
     </section>
+    
+
+    <section class="about">
+        <img src="./images/q-6c12dbae.png" alt="" srcset="">
+        <div id="particles-js"></div>
+        <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+        <div class="about-content">
+            <div class="what-is-esummit">
+                <h1>What is ESummit</h1>
+                E-Summit being the flagship event of E-Cell, is held annually brings together the academic community, venture capitalists, new age entrepreneurs and all those passionate about entrepreneurship to common grounds
+            </div>
+            <div class="inquisition-of-infinity">
+                <h1>Inquisition Of Infinity</h1>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem molestias necessitatibus unde, adipisci amet ipsam qui laudantium error tenetur illo ullam recusandae quas nobis placeat aut aliquam minus neque atque aperiam blanditiis maiores accusantium.
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer" q:key="ro_6">
+            <div class="container-sm">
+                <div class="footer-bottom">
+                    <div class="footer-copyright">Enterpreneruship Cell, &copy;2023 All Rights Reserved</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script>
         let hamburgerIcon = document.querySelector(".header-toggle")
         let nav = document.querySelector(".header-nav")
-        hamburgerIcon.addEventListener("click",function(){
+        hamburgerIcon.addEventListener("click", function () {
 
             hamburgerIcon.classList.toggle("header-toggle-active")
             nav.classList.toggle("header-nav-active")
@@ -112,6 +142,7 @@
         // console.log(hamburgerIcon)
 
     </script>
+    <script src="particle.js"></script>
 </body>
 
 </html>

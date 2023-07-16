@@ -360,6 +360,7 @@ body::-webkit-scrollbar-thumb:active {
 .lazy-video video {
     height: auto;
     width: 100%;
+    pointer-events: none;
 }
 
 .introduction-video {
@@ -373,6 +374,13 @@ body::-webkit-scrollbar-thumb:active {
     justify-content: center;
     align-items: center;
 
+}
+video::-webkit-media-controls {
+    visibility: hidden;
+}
+
+video::-webkit-media-controls-enclosure {
+    visibility: visible;
 }
 
 @media screen and (max-width:1200px) {

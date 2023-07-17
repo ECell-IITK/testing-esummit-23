@@ -388,7 +388,11 @@ video::-webkit-media-controls {
 video::-webkit-media-controls-enclosure {
     visibility: visible;
 }
-
+@media screen and (max-width:1248px) {
+    .introduction-video{
+        margin:296px auto 0;
+    }
+}
 @media screen and (max-width:600px) {
     .introduction-video {
         margin: 297px auto 0;
@@ -429,7 +433,7 @@ video::-webkit-media-controls-enclosure {
 }
 
 .introduction-video-inner video {
-    transform: translateY(-140px);
+    transform: translateY(-160px);
     width: 100%;
     opacity: 0.6;
 }

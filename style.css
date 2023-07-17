@@ -336,16 +336,17 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .hero-black-hole {
-    height: 810px;
+    height: 982px;
     left: 50%;
-    -webkit-mask-image: radial-gradient(50% 50% at 50% 50%, #fff 60.94%, transparent 100%);
-    mask-image: radial-gradient(50% 50% at 50% 50%, #fff 60.94%, transparent 100%);
+    /* -webkit-mask-image: radial-gradient(50% 50% at 50% 50%, #fff 60.94%, transparent 100%);
+    mask-image: radial-gradient(50% 50% at 50% 50%, #fff 60.94%, transparent 100%); */
     -webkit-mask-size: cover;
     mask-size: cover;
     position: absolute;
     top: 174px;
     transform: translate(-50%);
     width: 1440px;
+    overflow: hidden;
 }
 
 @media (max-width: 1248px) {
@@ -353,6 +354,8 @@ body::-webkit-scrollbar-thumb:active {
         width: 1028px;
         height: 578px;
         top: 138px;
+        /* -webkit-mask-image: radial-gradient(50% 50% at 50% 50%, #fff 100%, transparent 100%);
+        mask-image: radial-gradient(50% 50% at 50% 50%, #fff 100%, transparent 100%); */
     }
 }
 
@@ -388,11 +391,13 @@ video::-webkit-media-controls {
 video::-webkit-media-controls-enclosure {
     visibility: visible;
 }
+
 @media screen and (max-width:1248px) {
-    .introduction-video{
-        margin:296px auto 0;
+    .introduction-video {
+        margin: 296px auto 0;
     }
 }
+
 @media screen and (max-width:600px) {
     .introduction-video {
         margin: 297px auto 0;
@@ -401,7 +406,7 @@ video::-webkit-media-controls-enclosure {
     }
 
     .hero {
-        height: 750px;
+        height: 800px;
     }
 }
 
@@ -438,11 +443,12 @@ video::-webkit-media-controls-enclosure {
     opacity: 0.6;
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:600px) {
     .introduction-video-inner video {
         transform: translateY(0px);
     }
 }
+
 
 /* about */
 .about {

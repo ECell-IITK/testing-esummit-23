@@ -239,7 +239,7 @@ body::-webkit-scrollbar-thumb:active {
     height: 1000px;
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1250px) {
     .hero {
         max-width: 800px;
         margin: auto;
@@ -338,8 +338,8 @@ body::-webkit-scrollbar-thumb:active {
 .hero-black-hole {
     height: 982px;
     left: 50%;
-    /* -webkit-mask-image: radial-gradient(50% 50% at 50% 50%, #fff 60.94%, transparent 100%);
-    mask-image: radial-gradient(50% 50% at 50% 50%, #fff 60.94%, transparent 100%); */
+    -webkit-mask-image: radial-gradient(50% 50% at 50% 50%, #fff 60.94%, transparent 100%);
+    mask-image: radial-gradient(50% 50% at 50% 50%, #fff 60.94%, transparent 100%);
     -webkit-mask-size: cover;
     mask-size: cover;
     position: absolute;

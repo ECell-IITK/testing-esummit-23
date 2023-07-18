@@ -338,8 +338,8 @@ body::-webkit-scrollbar-thumb:active {
 .hero-black-hole {
     height: 982px;
     left: 50%;
-    -webkit-mask-image: radial-gradient(50% 50% at 50% 50%, #fff 60.94%, transparent 100%);
-    mask-image: radial-gradient(50% 50% at 50% 50%, #fff 60.94%, transparent 100%);
+    /* -webkit-mask-image: radial-gradient(50% 50% at 50% 50%, #fff 60.94%, transparent 100%);
+    mask-image: radial-gradient(50% 50% at 50% 50%, #fff 60.94%, transparent 100%); */
     -webkit-mask-size: cover;
     mask-size: cover;
     position: absolute;
@@ -406,11 +406,11 @@ video::-webkit-media-controls-enclosure {
     }
 
     .hero {
-        height: 800px;
+        height: 630px;
     }
 }
 
-.introduction-video:before {
+/* .introduction-video:before {
     background: linear-gradient(180deg, rgb(3 0 16 / 25%) 0%, rgb(0 0 0 / 87%) 54.48%, #0e092b 82.36%);
     content: "";
     display: block;
@@ -420,20 +420,20 @@ video::-webkit-media-controls-enclosure {
     top: 0;
     width: 100%;
     z-index: 1;
-}
+} */
 
 .introduction-video-inner {
     box-sizing: border-box;
     margin: 10px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     height: 100%;
     width: 1200px;
-    background: rgba(226, 174, 238, 0.18);
+    /* background: rgba(226, 174, 238, 0.18); */
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
     backdrop-filter: blur(8.3px);
     -webkit-backdrop-filter: blur(8.3px);
-    border: 1px solid rgba(226, 174, 238, 0.37);
+    /* border: 1px solid rgba(226, 174, 238, 0.37); */
     overflow: hidden;
 }
 

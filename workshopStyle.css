@@ -1,8 +1,8 @@
-:root{
-    --inner_circle: 328px;
+:root {
+    --inner_circle: 300px;
     --outer-circle1: calc(526 / 328 * var(--inner_circle));
     --outer-circle2: calc(528 / 328 * var(--inner_circle));
-    --animation-time: 2s;
+    --animation-time: 1.4s;
 }
 
 body::-webkit-scrollbar {
@@ -21,13 +21,14 @@ body::-webkit-scrollbar-thumb {
     background-color: #533c7989;
 }
 
-.workshop-home{
+.workshop-home {
     height: 100vh;
     width: 100vw;
     position: absolute;
     top: 0;
 }
-.workshop-heading{
+
+.workshop-heading {
     position: absolute;
     top: 40%;
     left: 20%;
@@ -35,24 +36,32 @@ body::-webkit-scrollbar-thumb {
     z-index: 7;
     transition: opacity 0.2s ease-in-out;
 }
-.workshop-heading h1{
+
+.workshop-heading h1 {
     text-transform: uppercase;
     font-size: 64px;
 }
-.workshop-heading-active{
+
+.workshop-heading-active {
     opacity: 0;
 }
+
 @media screen and (max-width:900px) {
-    .workshop-heading{
+    .workshop-heading {
         left: 0%;
-        width: 100vw ;
+        width: 100vw;
         padding: 10px;
     }
-    .workshop-heading h1{
+
+    .workshop-heading h1 {
         font-size: 40px;
     }
+    :root{
+        --inner_circle: 150px;
+    }
 }
-.workshop-home-circle{
+
+.workshop-home-circle {
     height: var(--inner_circle);
     width: var(--inner_circle);
     border-radius: 50%;
@@ -61,12 +70,14 @@ body::-webkit-scrollbar-thumb {
     top: calc(50% - var(--inner_circle) / 2);
     left: calc(50% - var(--inner_circle) / 2);
     z-index: 5;
-    transition: all var(--animation-time) ease-in-out;
+    transition: left var(--animation-time) ease-in-out;
 }
-.workshop-home-circle-active{
+
+.workshop-home-circle-active {
     left: -230px !important;
 }
-.workshop-home-outer-circle1{
+
+.workshop-home-outer-circle1 {
     height: var(--outer-circle1);
     width: var(--outer-circle1);
     border-radius: 50%;
@@ -75,27 +86,31 @@ body::-webkit-scrollbar-thumb {
     top: calc(50% - var(--outer-circle1) / 2);
     left: calc(50% - var(--outer-circle1) / 2);
     z-index: 4;
-    transition: all var(--animation-time) ease-in-out;
+    transition: left var(--animation-time) ease-in-out;
 }
-.workshop-home-outer-circle1-active{
+
+.workshop-home-outer-circle1-active {
     left: calc(- var(--outer-circle1) / 2);
 }
-.workshop-home-outer-circle2{
+
+.workshop-home-outer-circle2 {
     height: var(--outer-circle2);
     width: var(--outer-circle2);
     border-radius: 50%;
-    background: linear-gradient(90deg, rgba(22,22,22,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(90deg, rgba(22, 22, 22, 1) 0%, rgba(255, 255, 255, 1) 100%);
     position: absolute;
     top: calc(50% - var(--outer-circle2) / 2);
     left: calc(50% - var(--outer-circle2) / 2);
     z-index: 3;
-    transition: all var(--animation-time) ease-in-out;
+    transition: left var(--animation-time) ease-in-out;
 
 }
-.workshop-home-outer-circle2-active{
+
+.workshop-home-outer-circle2-active {
     left: calc(- var(--outer-circle2) / 2);
 }
-.workshop-home-arc{
+
+.workshop-home-arc {
     height: var(--outer-circle2);
     width: var(--outer-circle2);
     border-radius: 50%;
@@ -107,14 +122,20 @@ body::-webkit-scrollbar-thumb {
     left: calc(50% - var(--outer-circle2) / 2);
     z-index: 4;
     animation: spin 4s linear infinite;
-    transition: all var(--animation-time) ease-in-out;
+    transition: left var(--animation-time) ease-in-out;
 }
-.workshop-home-arc-active{
+
+.workshop-home-arc-active {
     left: calc(-1 * var(--outer-circle2) / 2);
 }
 
-@keyframes spin { 100% {transform: rotate(360deg); } }
-.workshop-description{
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.workshop-description {
     z-index: 6;
     width: 70%;
     position: absolute;
@@ -126,36 +147,45 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-.empty-first-half{
+.empty-first-half {
     height: 100vh;
     width: 100%;
 }
-.each-workshop-description{
+
+.each-workshop-description {
     display: flex;
     flex-direction: row;
     /* flex-wrap: wrap; */
     gap: 10px;
 }
-.each-workshop-description div{
+
+.each-workshop-description div {
     padding: 10px;
 }
 
 @media screen and (max-width:900px) {
-    .workshop-description{
+    .workshop-description {
         width: 100%;
         /* flex-direction: column; */
     }
-    .each-workshop-description{
+
+    .each-workshop-description {
         align-items: center;
     }
-    .each-workshop-description:nth-child(2n - 1){
+    .each-workshop-description span{
+        display: block;
+        max-width: 300px;
+    }
+
+    .each-workshop-description:nth-child(2n - 1) {
         flex-direction: column;
     }
-    .each-workshop-description:nth-child(2n ){
+
+    .each-workshop-description:nth-child(2n) {
         flex-direction: column-reverse;
     }
 
-    .workshop-description img{
+    .workshop-description img {
         /* min-width: 300px; */
         height: 240px;
         width: 300px;
@@ -191,4 +221,37 @@ body::-webkit-scrollbar-thumb {
 
 .workshop-description::-webkit-scrollbar-thumb:active {
     background-color: #533c7989;
+}
+
+.workshop-small-circle {
+    width: 54px;
+    height: 54px;
+    transform: rotate(-45deg);
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #FDC898 0%, rgba(181, 23, 255, 0.11) 100%);
+    position: absolute;
+    z-index: 6;
+}
+@media screen and (max-width:800px) {
+    .workshop-small-circle{
+        width: 27px;
+        height: 27px;
+    }
+}
+.workshop-small-circle1 {
+    top: 10%;
+    left: 20%;
+}
+.workshop-small-circle2 {
+    top: 60%;
+    left: 10%;
+}
+.workshop-small-circle3 {
+    top: 30%;
+    left: 70%;
+}
+.workshop-small-circle4 {
+    top: 70%;
+    left: 80%;
 }

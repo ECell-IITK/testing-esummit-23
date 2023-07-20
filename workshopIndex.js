@@ -1,5 +1,6 @@
 var scrollTop =  (document.documentElement || document.body.parentNode || document.body).scrollTop
 // console.log(scrollTop)
+console.log(window.innerHeight)
 var circle = document.querySelector(".workshop-home-circle")
 var circleWidth = circle.offsetWidth;
 var circle1 = document.querySelector(".workshop-home-arc")
@@ -8,10 +9,12 @@ var circle2 = document.querySelector(".workshop-home-outer-circle1")
 var circle2Width = circle2.offsetWidth;
 var circleOuter = document.querySelector(".workshop-home-outer-circle2")
 var circleOuterWidth = circleOuter.offsetWidth;
+// if(window.innerWidth < 600){
+//     document.documentElement.style.setProperty('--inner_circle', '150px');
+// }
 var description = document.querySelector(".workshop-description")
-var heading = document.querySelector(".workshop-heading")
-console.log(window.innerHeight)
 description.addEventListener("scroll",function(){
+    var heading = document.querySelector(".workshop-heading")
     // console.log(circleHeight)
     if(description.scrollTop > window.innerHeight/20){
         circle.style.left = "-" + circleWidth/2 +"px"
@@ -28,6 +31,9 @@ description.addEventListener("scroll",function(){
 
     }
 })
+
+var elmntToView = document.getElementById("sectionId");
+elmntToView.scrollIntoView();
 // console.log(description)
 // console.log(description.scrollTop)
 // console.log(description.scrollHeight)

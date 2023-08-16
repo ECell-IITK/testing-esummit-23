@@ -90,6 +90,7 @@ font-weight: 400;
 line-height: 44.8px; /* 280% */
 text-transform: uppercase;
 opacity: 1;
+cursor: pointer;
 }
 
 /* .card {

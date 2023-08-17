@@ -1,0 +1,29 @@
+:root{
+    --gap : 50px;
+}
+.speakers-section{
+    margin-top: 90px;
+}
+.speakers-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.speakers-heading img{
+    height: 100px;
+}
+
+.speakers-2-card{
+    margin: calc( var(--gap) / 2);
+}
+.speakers-2-card img{
+    width: 250px;
+}
+.speakers-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}

@@ -29,7 +29,7 @@ p {
     margin: 0 auto;
 }
 
-.competiton-content-section {
+.competition-content-section {
     height: 250px;
     display: flex;
     /* flex-direction: row-reverse; */
@@ -38,7 +38,7 @@ p {
 
 }
 
-.competiton-content-section-left {
+.competition-content-section-left {
     width: 50%;
     height: 100%;
     padding: 30px;
@@ -47,17 +47,17 @@ p {
     backdrop-filter: blur(25px);
 }
 
-.competiton-content-section-left h1 {
+.competition-content-section-left h1 {
     font-family: 'Quantico', sans-serif;
 }
 
-.competiton-content-section-left p {
+.competition-content-section-left p {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     text-align: justify;
 }
 
-.competiton-content-section-right {
+.competition-content-section-right {
     width: 50%;
     height: 100%;
     display: flex;
@@ -66,15 +66,15 @@ p {
     position: relative;
 }
 
-.competiton-content-section-right img {
+.competition-content-section-right img {
     width: 70%;
     z-index: 2;
 }
-.competiton-content-section-right-blur-background{
+.competition-content-section-right-blur-background{
     height: 100%;
     width: 100%;
     position: absolute;
-    left:0;
+    /* left:0; */
     background: rgba(47, 76, 92, 0.60);
 }
 .competition-read-more {
@@ -97,55 +97,61 @@ p {
 
     cursor: pointer;
 }
-.competition-content:nth-child(even) > .competiton-content-section{
+.competition-content:nth-child(even) > .competition-content-section{
     flex-direction: row-reverse;
 }
-.competition-content:nth-child(1) > .competiton-content-section{
+.competition-content:nth-child(odd) > .competition-content-section > .competition-content-section-right > .competition-content-section-right-blur-background{
+    left: 0;
+}
+.competition-content:nth-child(even) > .competition-content-section > .competition-content-section-right > .competition-content-section-right-blur-background{
+    right: 0;
+}
+.competition-content:nth-child(1) > .competition-content-section{
     background-position: bottom 0px;
 }
 @media screen and (max-width:700px) {
-    .competition-content > .competiton-content-section{
+    .competition-content > .competition-content-section{
         flex-direction: column-reverse;
         height: fit-content;
     }
-    .competiton-content-section-right{
+    .competition-content-section-right{
         width: 100%;
         height: 300px;
     }
-    .competiton-content-section-left{
+    .competition-content-section-left{
         width: 100%;
         height: 300px;
     }
-    .competition-content:nth-child(even) > .competiton-content-section{
+    .competition-content:nth-child(even) > .competition-content-section{
         flex-direction: column-reverse;
     }
 }
 #comp1{
     background: url('./images/competitions/content-background.png');
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     /* background-position-y: 200px; */
 }
 #comp2{
     background: url('./images/competitions/content-background.png');
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-position-y: -500px;
 }
 #comp3{
     background: url('./images/competitions/content-background-2.png');
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-position-x:center;
 
 }
 #comp4{
     background: url('./images/competitions/content-background-2.png');
     background-position-y: -500px;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-position-x:center;
 
 }
 #comp5{
     background: url('./images/competitions/content-background-2.png');
     background-position-y: -680px;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-position-x:center;
 }

@@ -661,10 +661,10 @@ video::-webkit-media-controls-enclosure {
 
 /* speakers */
 .speakers {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 0 10%;
+    /* display: flex; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+    /* padding: 0 10%; */
 }
 
 .speakers h1 {
@@ -678,6 +678,47 @@ video::-webkit-media-controls-enclosure {
     background: linear-gradient(to right, #9757CF 21%, #864AFF 50%, #7A5BCF 73%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.speakers-container-mobile{
+    height: 50vb;
+    background-image: url(./images/speakers\ background.png);
+    /* background-repeat: repeat-x; */
+    background-size: cover;
+    padding-top: 25vb;
+}
+
+.cutout-box{
+    position: relative;
+    overflow: hidden;
+    height: 50vb;
+    bottom: 13rem;
+}
+
+#speaker1{
+    position: absolute;
+    height: 32rem;
+    left: 3rem;
+    bottom: -10rem;
+    
+}
+#speaker2{
+    position: absolute;
+    height: 19rem;
+    bottom: 0;
+    left: -3rem;
+}
+#speaker3{
+    position: absolute;
+    height: 22rem;
+    right: 5rem;
+    bottom: -2rem;
+}
+#speaker4{
+    position: absolute;
+    right: -2rem;
+    bottom: -5rem;
+    height: 21rem;
 }
 
 .speakers-images-box {

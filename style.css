@@ -681,18 +681,18 @@ video::-webkit-media-controls-enclosure {
 }
 
 .speakers-container-mobile{
-    height: 50vb;
+    height: 360px;
     background-image: url(./images/speakers\ background.png);
     /* background-repeat: repeat-x; */
     background-size: cover;
-    padding-top: 25vb;
+    /* padding-top: 25vb; */
 }
 
 .cutout-box{
     position: relative;
     overflow: hidden;
-    height: 50vb;
-    bottom: 13rem;
+    height: 360px;
+    bottom: 0;
 }
 
 #speaker1{

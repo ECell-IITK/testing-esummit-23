@@ -682,7 +682,8 @@ video::-webkit-media-controls-enclosure {
 
 .speakers-container-mobile{
     height: 50vb;
-    background-image: url(./images/speakers\ background.png);
+    background-color: #030014;
+    background-image: url(./images/speakers\ background\ dark.png);
     /* background-repeat: repeat-x; */
     background-size: cover;
     padding-top: 25vb;

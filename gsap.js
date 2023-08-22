@@ -1,5 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
-const blurElements = document.querySelectorAll(".competiton-content-section-right-blur-background");
+const blurElements = document.querySelectorAll(".competition-content-section-right-blur-background");
 blurElements.forEach(element => {
     const tl = gsap.timeline({
         scrollTrigger: {

@@ -686,14 +686,14 @@ video::-webkit-media-controls-enclosure {
     background-image: url(./images/speakers\ background\ dark.png);
     /* background-repeat: repeat-x; */
     background-size: cover;
-    padding-top: 25vb;
+    /* padding-top: 25vb; */
 }
 
 .cutout-box{
     position: relative;
     overflow: hidden;
-    height: 50vb;
-    bottom: 13rem;
+    height: 360px;
+    bottom: 0;
 }
 
 #speaker1{

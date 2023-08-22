@@ -16,6 +16,7 @@
 
 .speakers-2-card{
     margin: calc( var(--gap) / 2);
+    opacity: 0;
 }
 .speakers-2-card img{
     width: 250px;

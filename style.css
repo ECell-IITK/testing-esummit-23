@@ -685,6 +685,7 @@ video::-webkit-media-controls-enclosure {
     background-image: url(./images/speakers\ background.png);
     /* background-repeat: repeat-x; */
     background-size: cover;
+    background-blend-mode: lighten;
     /* padding-top: 25vb; */
 }
 

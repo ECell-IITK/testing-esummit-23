@@ -1,0 +1,73 @@
+.comp-intro{
+    width: 100%;
+    margin: 10px auto;
+    height: 350px;
+    margin-top: 90px;
+    max-width: 1200px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.comp-intro-child{
+    height: 100%;
+    width: 100%;
+    background: url("./images/futuristic-sci-fi-space-tunnel-passageway-with-glowing-shiny-lights_181624-20241.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position:absolute;
+    z-index: 1;
+    transition: all 1s;
+}
+.comp-intro-child:hover{
+    transform: scale(1.2);
+}
+.comp-intro-left{
+    padding: 2.5%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.comp-intro img{
+    position: relative;
+    max-width: 400px;
+    z-index: 2;
+}
+.comp-brief-description{
+    max-width: 600px;
+    z-index: 2;
+    position: relative;
+}
+.comp-register-button{
+    width: 180px;
+    height: 50px;
+    border-radius:30px;
+    background-color: #866AFA;
+    text-align: left;
+    cursor: pointer;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    padding-left: 20px;
+    position: relative;
+    z-index: 2;
+}
+.comp-register-button img{
+    position: absolute;
+    right: 20px;
+    z-index: 2;
+}
+@media screen and (max-width:800px) {
+    .comp-intro-left{
+        width: 100%;
+    }
+    .comp-intro img{
+        max-width: 300px;
+    }
+}

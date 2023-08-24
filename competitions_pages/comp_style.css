@@ -180,7 +180,7 @@ div::-webkit-scrollbar-thumb:active {
     border: 2px solid white;
     height: 350px;
     border-radius: 10px;
-
+    overflow: hidden;
 }
 
 .channel-info {
@@ -211,6 +211,13 @@ div::-webkit-scrollbar-thumb:active {
     width: fit-content;
     border-bottom: 1px solid #4d4d4d;
     /* margin-block: 3rem; */
+}
+
+@media screen and (max-width:700px) {
+    [role=tablist]{
+        width: 100%;
+        overflow-x: scroll;
+    }
 }
 
 [role=tablist]::after {

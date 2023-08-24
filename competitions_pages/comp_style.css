@@ -1,4 +1,35 @@
-.comp-intro{
+/* Chrome, Edge and Safari */
+div::-webkit-scrollbar {
+    width: 10px;
+}
+
+div::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #282a7c00;
+}
+
+div::-webkit-scrollbar-track:hover {
+    background-color: #b8c0c200;
+}
+
+div::-webkit-scrollbar-track:active {
+    background-color: #80949900;
+}
+
+div::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #533c7989;
+}
+
+div::-webkit-scrollbar-thumb:hover {
+    background-color: #533c7989;
+}
+
+div::-webkit-scrollbar-thumb:active {
+    background-color: #533c7989;
+}
+
+.comp-intro {
     width: 100%;
     margin: 10px auto;
     height: 350px;
@@ -7,23 +38,26 @@
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    
+
 }
-.comp-intro-child{
+
+.comp-intro-child {
     height: 100%;
     width: 100%;
     background: url("./images/futuristic-sci-fi-space-tunnel-passageway-with-glowing-shiny-lights_181624-20241.avif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position:absolute;
+    position: absolute;
     z-index: 1;
     transition: all 1s;
 }
-.comp-intro-child:hover{
+
+.comp-intro-child:hover {
     transform: scale(1.2);
 }
-.comp-intro-left{
+
+.comp-intro-left {
     padding: 2.5%;
     display: flex;
     height: 100%;
@@ -32,24 +66,27 @@
     justify-content: space-around;
     align-items: flex-start;
 }
-.comp-intro img{
+
+.comp-intro img {
     position: relative;
     max-width: 400px;
     z-index: 2;
 }
-.comp-brief-description{
+
+.comp-brief-description {
     max-width: 600px;
     z-index: 2;
     position: relative;
 }
-.comp-register-button{
+
+.comp-register-button {
     width: 180px;
     height: 50px;
-    border-radius:30px;
+    border-radius: 30px;
     background-color: #866AFA;
     text-align: left;
     cursor: pointer;
-    
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -58,16 +95,68 @@
     position: relative;
     z-index: 2;
 }
-.comp-register-button img{
+
+.comp-register-button img {
     position: absolute;
     right: 20px;
     z-index: 2;
 }
+
 @media screen and (max-width:800px) {
-    .comp-intro-left{
+    .comp-intro-left {
         width: 100%;
     }
-    .comp-intro img{
+
+    .comp-intro img {
         max-width: 300px;
     }
+}
+
+
+.outline-vision-guidelines-outer{
+    position: relative;
+}
+.outline-vision-guidelines-outer{
+    position: relative;
+    margin: 10px auto;
+    max-width: 1200px;
+    margin-top: 90px;
+    height: 350px;
+    overflow: hidden;
+
+}
+.outline-vision-guidelines {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    position: relative;
+    overflow-x: hidden;
+
+    border: 2px solid white;
+    overflow-y: scroll;
+}
+
+
+
+.knob {
+    position: absolute;
+    left: calc(0% - 410px / 2);
+    top: calc(50% - 410px / 2);
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+}
+
+.outline-vision-guidelines div {
+    height: 100%;
+    width: 80%;
+    position: absolute;
+    right: 20px;
+}
+
+.outline {
+    top: 100%;
+}
+
+.guidelines {
+    top: 200%;
 }

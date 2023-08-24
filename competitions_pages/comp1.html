@@ -50,7 +50,100 @@
                 </div>
             </div>
         </div>
+        <div class="outline-vision-guidelines-outer">
+            <img class="knob" id="knob" src="https://greensock.com/wp-content/uploads/custom/draggable/img/knob.png"
+                width="410" height="410">
+            <div class="outline-vision-guidelines">
+                <div class="vision">
+                    Vision
+                    Pitching your idea to a group of investors is incredibly nerve-wracking. Always puts you in a
+                    dilemma
+                    whether investors like your idea or not.
+                    Most of all, you wonder if they're going to fund you or not. Even if one has money in the bank,
+                    there
+                    sure is going to be a point where one simply has to get additional funding to grow their startup, to
+                    start scaling up. To achieve this you need to understand the perspective of the person sitting on
+                    the
+                    other side of the table.
+                    So we bring to you a competition that will actually put you in the shoes of investors thereby
+                    teaching
+                    you a lot about what investors want and how to position the companies for successful pitches in the
+                    future.
+                    Students participating here are the investors, not the entrepreneurs. They do not have to come up
+                    with
+                    startup ideas. Rather, they would play the role of Angel Investors/Analysts in a VC firm assessing
+                    the
+                    startups being posed to them as potential investments.
+                </div>
+                <div class="outline">
+                    Outline
+                    Pitching your idea to a group of investors is incredibly nerve-wracking. Always puts you in a
+                    dilemma
+                    whether investors like your idea or not.
+                    Most of all, you wonder if they’re going to fund you or not. Even if one has money in the bank,
+                    there
+                    sure is going to be a point where one simply has to get additional funding to grow their startup, to
+                    start scaling up. To achieve this you need to understand the perspective of the person sitting on
+                    the
+                    other side of the table.
+                    So we bring to you a competition that will actually put you in the shoes of investors thereby
+                    teaching
+                    you a lot about what investors want and how to position the companies for successful pitches in the
+                    future.
+                    Students participating here are the investors, not the entrepreneurs. They do not have to come up
+                    with
+                    startup ideas. Rather, they would play the role of Angel Investors/Analysts in a VC firm assessing
+                    the
+                    startups being posed to them as potential investments.
+                </div>
+                <div class="guidelines">
+                    Guidelines
+                    Pitching your idea to a group of investors is incredibly nerve-wracking. Always puts you in a
+                    dilemma
+                    whether investors like your idea or not.
+                    Most of all, you wonder if they’re going to fund you or not. Even if one has money in the bank,
+                    there
+                    sure is going to be a point where one simply has to get additional funding to grow their startup, to
+                    start scaling up. To achieve this you need to understand the perspective of the person sitting on
+                    the
+                    other side of the table.
+                    So we bring to you a competition that will actually put you in the shoes of investors thereby
+                    teaching
+                    you a lot about what investors want and how to position the companies for successful pitches in the
+                    future.
+                    Students participating here are the investors, not the entrepreneurs. They do not have to come up
+                    with
+                    startup ideas. Rather, they would play the role of Angel Investors/Analysts in a VC firm assessing
+                    the
+                    startups being posed to them as potential investments.
+                </div>
+            </div>
+        </div>
+
+        <!-- <div id="knobBG">
+            <div id="knob"></div>
+          </div>
+          <div id="content">
+            <div>
+              <div class="box box1">One <div id="description">Drag me or spin the knob. Flick for momentum. Notice how it smoothly snaps to sections. </div></div>
+              <div class="box box2">Two</div>
+              <div class="box box3">Three</div>
+              <div class="box box4">Four</div>
+              <div class="box box5">Five</div>
+              <div class="box box6">Six</div>
+              <div class="box box7">Seven</div>
+              <div class="box box8">Eight</div>
+              <div class="box box9">Nine</div>
+            </div>
+          </div> -->
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/Draggable.min.js"></script>
+    <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/InertiaPlugin.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/utils/Draggable.min.js"></script>
+    <script src="./library/throwProps.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script> -->
     <script>
         let hamburgerIcon = document.querySelector(".header-toggle")
         let nav = document.querySelector(".header-nav")
@@ -60,10 +153,40 @@
             nav.classList.toggle("header-nav-active")
         })
       // console.log(hamburgerIcon)
+    </script>
+    <script>
+        
+        var knob = document.querySelector(".knob")
+        // knob.style.transform = "rotate( 45deg )"
+
+        var scrollDiv = document.querySelector(".outline-vision-guidelines")
+        scrollDiv.addEventListener("scroll",()=>{
+            let parentHeight = scrollDiv.clientHeight;
+            let offset = 0;
+            let scrolled = scrollDiv.scrollTop;
+            if( scrolled >= 340){
+                knob.style.transform = "rotate( 180deg )"
+            }else if(scrolled >= 180){
+                knob.style.transform = "rotate( 90deg )"
+            }else{
+                knob.style.transform = "rotate( 0deg )"
+            }
+            // console.log(parentHeight,scrollDiv.scrollTop)
+        })
+        Draggable.create("#knob", {
+            type: "rotation",
+            throwProps: true,
+
+            onDrag: function () {
+                $('#count').html(Math.round(this.rotation));
+            },
+            // snap: function (endValue) {
+            //     return Math.round(endValue / rotationSnap) * rotationSnap;
+            // }
+        })
 
     </script>
-    
-    
+
 </body>
 
 </html>

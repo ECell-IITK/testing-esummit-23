@@ -680,27 +680,40 @@ video::-webkit-media-controls-enclosure {
     -webkit-text-fill-color: transparent;
 }
 
-.speakers-container-mobile{
-    height: 360px;
+.speakers-main-container-mobile{
+    height: 50vb;
+    background-color: #030014;
+    position: relative;
+}
+
+.speakers-background-mobile{
+    height: 50vb;
+    width: 100vb;
     background-image: url(./images/speakers\ background.png);
     /* background-repeat: repeat-x; */
     background-size: cover;
-    background-blend-mode: lighten;
     /* padding-top: 25vb; */
+    opacity: 0.3;
+    position: absolute;
+    transition: 1s;
 }
+
+/* .speakers-background-mobile:hover{
+    opacity: 0.3;
+} */
 
 .cutout-box{
     position: relative;
     overflow: hidden;
-    height: 360px;
-    bottom: 0;
+    height: 380px;
+    bottom: -5rem;
 }
 
 #speaker1{
     position: absolute;
-    height: 32rem;
-    left: 3rem;
-    bottom: -10rem;
+    height: 23rem;
+    left: 4rem;
+    bottom: 0;
     
 }
 #speaker2{
@@ -712,14 +725,14 @@ video::-webkit-media-controls-enclosure {
 #speaker3{
     position: absolute;
     height: 22rem;
-    right: 5rem;
-    bottom: -2rem;
+    right: 6rem;
+    bottom: 0rem;
 }
 #speaker4{
     position: absolute;
     right: -2rem;
-    bottom: -5rem;
-    height: 21rem;
+    bottom: 0rem;
+    height: 18rem;
 }
 
 .speakers-images-box {

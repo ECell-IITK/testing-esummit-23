@@ -29,6 +29,74 @@ div::-webkit-scrollbar-thumb:active {
     background-color: #533c7989;
 }
 
+.background-ellipse-1 {
+    position: absolute;
+    width: 330.172px;
+    height: 377.59px;
+    flex-shrink: 0;
+    border-radius: 377.59px;
+    opacity: 0.4;
+    background: radial-gradient(57.42% 57.42% at 50.00% 42.58%, rgba(135, 106, 250, 0.481) 0%, rgba(191, 175, 255, 0) 100%);
+    top: 200px;
+    left: 100px;
+    border-radius: 50% 22% 40% 80%;
+    filter: blur(100px);
+    background: radial-gradient(circle at 50% 50%, rgba(76, 0, 255, 1), rgba(76, 0, 255, 0));
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.background-ellipse-2 {
+    position: absolute;
+    width: 330.172px;
+    height: 377.59px;
+    flex-shrink: 0;
+    border-radius: 377.59px;
+    opacity: 0.4;
+    background: radial-gradient(ellipse at center, rgba(135, 106, 250, 0.2) 0%, transparent 50%, black 100%);
+    border-radius: 50% 22% 40% 80%;
+    filter: blur(100px);
+    background: radial-gradient(circle at 50% 50%, rgba(76, 0, 255, 1), rgba(76, 0, 255, 0));
+    opacity: 0.8;
+
+    top: 200px;
+    right: 100px;
+    z-index: -1;
+
+}
+
+.background-ellipse-3 {
+    position: absolute;
+    width: 330.172px;
+    height: 377.59px;
+    flex-shrink: 0;
+    border-radius: 377.59px;
+    border-radius: 50% 22% 40% 80%;
+    filter: blur(100px);
+    background: radial-gradient(circle at 50% 50%, rgb(162, 0, 255), rgba(76, 0, 255, 0));
+    opacity: 0.8;
+    top: 600px;
+    right: 10%;
+    z-index: -1;
+
+}
+
+.background-ellipse-4 {
+    position: absolute;
+    width: 330.172px;
+    height: 377.59px;
+    flex-shrink: 0;
+    border-radius: 377.59px;
+    border-radius: 50% 22% 40% 80%;
+    filter: blur(100px);
+    background: radial-gradient(circle at 50% 50%, rgba(162, 0, 255, 0.697), rgba(76, 0, 255, 0));
+    opacity: 0.8;
+    top: 800px;
+    left: 0%;
+    z-index: -1;
+
+}
+
 .comp-intro {
     width: 100%;
     margin: 10px auto;
@@ -38,7 +106,6 @@ div::-webkit-scrollbar-thumb:active {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-
 }
 
 .comp-intro-child {
@@ -214,7 +281,7 @@ div::-webkit-scrollbar-thumb:active {
 }
 
 @media screen and (max-width:700px) {
-    [role=tablist]{
+    [role=tablist] {
         width: 100%;
         overflow-x: scroll;
     }

@@ -17,16 +17,44 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .competition-heading img {
-    margin-top: 90px;
+    margin-top: 40px;
     max-width: 700px;
 }
-
+@media screen and (max-width:700px) {
+    .competition-heading img{
+        max-width: 500px;
+        width: 100%;
+    }
+}
+.competition-content-outer{
+    position: relative;
+    /* box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5); */
+}
+.competition-content-card{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.competition-content-blob{
+    opacity: 0.3;
+    background: #85def285;
+    height: 25%;
+    width: 12.5%;
+    border-radius: 100%;
+    filter: blur(15px);
+    /*   mix-blend-mode: multiply; */
+    /*   mix-blend-mode: color; */
+    position: absolute;
+}
 .competition-content {
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 
 .competition-content-section {

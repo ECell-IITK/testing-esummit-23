@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@800&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,7 +8,8 @@
     margin: 0;
     padding: 0;
 }
-a{
+
+a {
     color: white;
     text-decoration: none;
 }
@@ -21,7 +23,7 @@ body {
 }
 
 html {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     height: 100vh;
     scroll-behavior: smooth;
 }
@@ -73,7 +75,11 @@ body::-webkit-scrollbar-thumb:active {
     background-color: #533c7989;
 }
 
-
+@media screen and (max-width:900px) {
+    .circle{
+        display: none;
+    }
+}
 .header {
     padding: 0 20px;
     -webkit-backdrop-filter: blur(16px);
@@ -120,7 +126,7 @@ body::-webkit-scrollbar-thumb:active {
     height: 1.5px;
     background-color: #fff;
     border-radius: 500px;
-    transition: all .3s ease-in-out;
+    transition: all .3s 0.3s ease-in-out;
 }
 
 .header-toggle div:not(:last-child) {
@@ -397,6 +403,7 @@ body::-webkit-scrollbar-thumb:active {
     color: transparent;
     -webkit-text-fill-color: transparent;
     display: block;
+    overflow: hidden;
 }
 
 .hero-badge {
@@ -597,19 +604,86 @@ video::-webkit-media-controls-enclosure {
 .about {
     position: relative;
     width: 100%;
-    height: 550px;
+    /* height: 1000px; */
     overflow: hidden;
     /* background: url(./images/q-6c12dbae.png);
     background-size: cover;
     background-repeat: no-repeat; */
+}
 
+.side-texts {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100;
+    font-size: 30px;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.side-texts-block {
+    transition: transform 0.1s ease-in-out;
+    overflow: hidden;
+    width: 400%;
+    text-overflow: clip;
+    height: 30px;
+}
+
+
+.side-texts-block span {
+    padding: 10px;
+}
+
+.side-texts-block span:nth-child(3n) {
+    font-family: 'Stick No Bills', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    background: linear-gradient(91deg, #0277A9 0.26%, #36A0CD 39.46%, #81D5F6 76.38%, #D9D9D9 109.33%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.side-texts-block span:nth-child(3n-1) {
+    color: whitesmoke;
+    font-family: 'Stick No Bills', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.side-texts-block span:nth-child(3n-2) {
+    color: #77AEDE;
+    font-family: 'Stick No Bills', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.theme-revealer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-revealer iframe {
+    width: 600px;
+    height: 250px;
+    margin: 20px;
+    position: relative;
+    z-index: 5;
+    /* display: hidden; */
 }
 
 .about img {
     position: absolute;
     top: 0;
-    width: 1400px;
-    left: calc(50% - 700px);
+    
+    width: 1600px;
+    left: calc(50% - 800px);
 }
 
 .what-is-esummit h1,
@@ -680,13 +754,13 @@ video::-webkit-media-controls-enclosure {
     -webkit-text-fill-color: transparent;
 }
 
-.speakers-main-container-mobile{
+.speakers-main-container-mobile {
     height: 50vb;
     background-color: #030014;
     position: relative;
 }
 
-.speakers-background-mobile{
+.speakers-background-mobile {
     height: 50vb;
     width: 100vb;
     background-image: url(./images/speakers\ background.png);
@@ -702,33 +776,36 @@ video::-webkit-media-controls-enclosure {
     opacity: 0.3;
 } */
 
-.cutout-box{
+.cutout-box {
     position: relative;
     overflow: hidden;
     height: 380px;
     bottom: -5rem;
 }
 
-#speaker1{
+#speaker1 {
     position: absolute;
     height: 23rem;
     left: 4rem;
     bottom: 0;
-    
+
 }
-#speaker2{
+
+#speaker2 {
     position: absolute;
     height: 19rem;
     bottom: 0;
     left: -3rem;
 }
-#speaker3{
+
+#speaker3 {
     position: absolute;
     height: 22rem;
     right: 6rem;
     bottom: 0rem;
 }
-#speaker4{
+
+#speaker4 {
     position: absolute;
     right: -2rem;
     bottom: 0rem;
@@ -820,44 +897,44 @@ video::-webkit-media-controls-enclosure {
     color: #a487fa;
 }
 
-@media screen and (min-width:750px){
-    .footer-text{
+@media screen and (min-width:750px) {
+    .footer-text {
         font-size: 30px;
         margin: 10px;
         padding: 10px;
     }
-    
-    .upper-arrow{
+
+    .upper-arrow {
         width: 20px;
         padding-left: 10px;
         padding-right: 10px;
     }
-    
-    button{
+
+    button {
         background-color: rgb(3, 0, 20);
         border: 1px solid red;
         border-radius: 6px;
     }
-    
-    .footer-copyright{
+
+    .footer-copyright {
         text-align: center;
     }
-    
-    .back-to-top{
+
+    .back-to-top {
         justify-content: center;
         display: flex;
         margin: 30px;
-        
+
     }
-    
-    .social{
+
+    .social {
         display: flex;
         justify-content: center;
         padding: 0 230px;
         margin: 25px;
     }
-    
-    .moto{
+
+    .moto {
         display: flex;
         align-items: center;
         border: 2px solid red;
@@ -868,86 +945,86 @@ video::-webkit-media-controls-enclosure {
         margin: 20px;
         padding: 20px;
     }
-    
-    .moto-cover{
+
+    .moto-cover {
         box-sizing: border-box;
         align-items: center;
         display: flex;
         justify-content: center;
     }
-    
-    .image{
+
+    .image {
         padding: 0 25px;
     }
-    
-    .contacts{
+
+    .contacts {
         display: flex;
         margin: 25px;
         justify-content: center;
         padding: 0 30px;
     }
-    
-    .contacts750{
+
+    .contacts750 {
         display: none;
     }
 
-    .icon{
+    .icon {
         height: 2.4rem;
         width: 2.4rem;
         position: relative;
         margin: 50px 70px;
     }
-    
-    .address{
+
+    .address {
         text-align: center;
         font-size: 20px;
         padding: 6px 0;
     }
-    
-    .email{
+
+    .email {
         text-decoration: none;
         margin: 50px 40px;
     }
 }
 
-@media screen and (max-width:750px){
-    .footer-text{
+@media screen and (max-width:750px) {
+    .footer-text {
         font-size: 30px;
         margin: 10px;
         padding: 10px;
     }
-    
-    .upper-arrow{
+
+    .upper-arrow {
         width: 20px;
         padding-left: 10px;
         padding-right: 10px;
     }
-    
-    button{
+
+    button {
         background-color: rgb(3, 0, 20);
         border: 1px solid red;
         border-radius: 6px;
     }
-    
-    .footer-copyright{
+
+    .footer-copyright {
         text-align: center;
     }
-    
-    .back-to-top{
+
+    .back-to-top {
         justify-content: center;
         display: flex;
         margin: 30px;
-        
+
     }
-    
-    .social{
+
+    .social {
         display: flex;
         justify-content: center;
         padding: 0 100px;
         margin: 25px;
     }
-    
-    .moto{
+
+    .moto {
         display: flex;
         align-items: center;
         border: 2px solid red;
@@ -958,43 +1035,42 @@ video::-webkit-media-controls-enclosure {
         margin: 20px;
         padding: 20px;
     }
-    
-    .moto-cover{
+
+    .moto-cover {
         box-sizing: border-box;
         align-items: center;
         display: flex;
         justify-content: center;
     }
-    
-    .image{
+
+    .image {
         padding: 0 25px;
     }
-    
-    .contacts750{
+
+    .contacts750 {
         display: flex;
         flex-direction: column;
     }
 
-    .contacts{
+    .contacts {
         display: none;
     }
-    
-    .icon{
+
+    .icon {
         height: 2.4rem;
         width: 2.4rem;
         position: relative;
         margin: 10px 20px;
     }
-    
-    .address{
+
+    .address {
         text-align: center;
         font-size: 20px;
         padding: 6px 0;
     }
-    
-    .email{
+
+    .email {
         text-decoration: none;
         margin: 50px 40px;
     }
 }
-

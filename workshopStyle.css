@@ -71,6 +71,8 @@ body::-webkit-scrollbar-thumb {
     left: calc(50% - var(--inner_circle) / 2);
     z-index: 5;
     transition: left var(--animation-time) ease-in-out;
+
+background: linear-gradient(153deg, rgba(23, 144, 197, 0.69) 14.16%, #7EBCD7 53.59%, #FFF 103.24%);
 }
 
 .workshop-home-circle-active {
@@ -230,6 +232,7 @@ body::-webkit-scrollbar-thumb {
     flex-shrink: 0;
     border-radius: 50%;
     background: linear-gradient(180deg, #FDC898 0%, rgba(181, 23, 255, 0.11) 100%);
+background: linear-gradient(153deg, rgba(23, 144, 197, 0.69) 14.16%, #7EBCD7 53.59%, #FFF 103.24%);
     position: absolute;
     z-index: 6;
 }

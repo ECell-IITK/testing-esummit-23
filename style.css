@@ -90,19 +90,19 @@ body::-webkit-scrollbar-thumb:active {
     top: 0;
     width: 100vw;
     z-index: 10;
-    height: 88px;
+    height: 60px;
 }
 
 @media (max-width: 1248px) {
     .header .container-lg {
-        padding: 20px 0;
+        padding: 10px 0;
     }
 }
 
 
 @media (max-width: 1248px) {
     .header .container-lg {
-        padding: 20px 0;
+        padding: 10px 0;
     }
 }
 
@@ -110,7 +110,7 @@ body::-webkit-scrollbar-thumb:active {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 26px 0;
+    padding: 10px 0;
     position: relative;
 }
 
@@ -386,6 +386,7 @@ body::-webkit-scrollbar-thumb:active {
     padding-top: 173px;
     position: relative;
     height: 1000px;
+    overflow: hidden;
 }
 
 @media screen and (max-width:1250px) {
@@ -613,7 +614,7 @@ video::-webkit-media-controls-enclosure {
 
 .side-texts {
     position: absolute;
-    top: 80px;
+    top: 60px;
     left: 0;
     display: flex;
     flex-direction: column;
@@ -622,6 +623,7 @@ video::-webkit-media-controls-enclosure {
     height: 100;
     font-size: 30px;
     overflow: hidden;
+    width: 100%;
     text-transform: uppercase;
 }
 
@@ -686,7 +688,7 @@ video::-webkit-media-controls-enclosure {
     left: calc(50% - 800px);
 }
 
-.what-is-esummit h1,
+/* .what-is-esummit h1,
 .inquisition-of-infinity h1 {
     font-size: 46px;
     line-height: 64px;
@@ -704,7 +706,7 @@ video::-webkit-media-controls-enclosure {
     font-size: 20px;
     position: relative;
     z-index: 2;
-}
+} */
 
 .inquisition-of-infinity {
     padding-top: 30px;
@@ -718,7 +720,7 @@ video::-webkit-media-controls-enclosure {
 
 }
 
-@media screen and (max-width:600px) {
+/* @media screen and (max-width:600px) {
 
     .what-is-esummit h1,
     .inquisition-of-infinity h1 {
@@ -731,7 +733,7 @@ video::-webkit-media-controls-enclosure {
         font-size: 14px;
         padding: 20px;
     }
-}
+} */
 
 /* speakers */
 .speakers {

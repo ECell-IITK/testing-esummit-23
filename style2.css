@@ -60,10 +60,10 @@
     position: relative;
     z-index: 2;
     overflow: hidden;
-    
+
     /* height: inherit; */
     /* height: 100vh; */
-    
+
 }
 
 .buildings-cyberpunk-up {
@@ -192,6 +192,7 @@
     margin-top: 200px;
     position: relative;
     margin-left: 121px;
+    text-shadow: 9px 7px 4px rgba(0, 0, 0, 0.46);
 }
 
 .what-is-esummit-content {
@@ -241,6 +242,7 @@
 
 .esummit-theme-heading {
     font-size: 48px;
+    text-shadow: 9px 7px 4px rgba(0, 0, 0, 0.46);
 }
 
 .esummit-theme-content {
@@ -274,7 +276,7 @@
     width: 300px;
 }
 
-.astronaut-2{
+.astronaut-2 {
     position: absolute;
     /* top: 20; */
     /* left: 20; */
@@ -363,6 +365,41 @@
 
 }
 
+.read-more-what-we-do {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    border-radius: 6px;
+    border: 1px solid #FFF;
+    opacity: 0.71;
+    background: #FFF;
+    box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(25000px);
+    width: 182px;
+    height: 48px;
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.read-more-what-we-do a{
+    color: #000;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: 'Orbitron', sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+}
+
 .what-we-do-card-content {
     font-family: 'Orbitron', sans-serif;
     font-size: 16px;
@@ -422,12 +459,12 @@
 }
 
 @media screen and (max-width:600px) {
-    .workshop-downtown-heading{
+    .workshop-downtown-heading {
         font-size: 40px;
     }
 }
 
-.workshop-downtown-content{
+.workshop-downtown-content {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -438,7 +475,7 @@
     margin: 10px;
 }
 
-.workshop-downtown-cotent-content-card{
+.workshop-downtown-cotent-content-card {
     display: flex;
     flex-direction: column;
     height: 250px;
@@ -448,7 +485,8 @@
     margin: 10px;
     /* flex-wrap: wrap; */
 }
-.workshop-downtown-cotent-content-card a{
+
+.workshop-downtown-cotent-content-card a {
     width: 152px;
     height: 38px;
     flex-shrink: 0;
@@ -464,12 +502,14 @@
     font-family: Quantico, sans-serif;
     cursor: pointer;
 }
-.workshop-downtown-cotent-content-card button{
+
+.workshop-downtown-cotent-content-card button {
     border: 0px;
     color: white;
     background: transparent;
 }
-.workshop-downtown-cotent-content-card-img{
+
+.workshop-downtown-cotent-content-card-img {
     width: 200px;
 }
 
@@ -480,6 +520,7 @@
     --outer-circle2: calc(528 / 328 * var(--inner_circle));
     --animation-time: 1.4s;
 }
+
 .main-page-workshop-home-circle {
     height: var(--inner_circle);
     width: var(--inner_circle);
@@ -493,6 +534,7 @@
 
     background: linear-gradient(153deg, rgba(23, 144, 197, 0.69) 14.16%, #7EBCD7 53.59%, #FFF 103.24%);
 }
+
 .main-page-workshop-home-outer-circle1 {
     height: var(--outer-circle1);
     width: var(--outer-circle1);
@@ -504,6 +546,7 @@
     z-index: 4;
     transition: left var(--animation-time) ease-in-out;
 }
+
 .main-page-workshop-home-outer-circle2 {
     height: var(--outer-circle2);
     width: var(--outer-circle2);
@@ -517,6 +560,7 @@
     transition: left var(--animation-time) ease-in-out;
 
 }
+
 .main-page-workshop-home-arc {
     height: var(--outer-circle2);
     width: var(--outer-circle2);
@@ -539,31 +583,33 @@
 }
 
 /* speaker section */
-.main-page-speaker-section{
+.main-page-speaker-section {
     background: url("./images/speakerBackgroundMainPage.png");
     background-size: cover;
     position: relative;
     overflow: hidden;
 }
 
-.main-page-speaker-section-heading{
+.main-page-speaker-section-heading {
     background: linear-gradient(301deg, #6EB0CD 4.94%, #FFF 68.7%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-backdrop-filter: blur(18.5px);
-font-size: 90px;
-text-align: center;
-font-family: 'Orbitron', sans-serif;
-width: fit-content;
-margin: 0 auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    backdrop-filter: blur(18.5px);
+    font-size: 90px;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    width: fit-content;
+    margin: 0 auto;
 }
+
 @media screen and (max-width:600px) {
-    .main-page-speaker-section-heading{
+    .main-page-speaker-section-heading {
         font-size: 50px;
     }
 }
-.main-page-speaker-section-content{
+
+.main-page-speaker-section-content {
     width: 80%;
     margin: 0 auto;
     display: flex;

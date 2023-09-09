@@ -45,9 +45,10 @@ gsap.fromTo(
 
 gsap.fromTo(
   ".what-is-esummit-astronaut",
-  {  y: 200 , x : 100  },
+  {  y: 200 , x : 100 ,scale:0.5},
   {
     y: 10,
+    scale:1,
     x: window.innerWidth - 50,
     // duration: 1,
     scrollTrigger: {
@@ -63,10 +64,10 @@ gsap.fromTo(
 
 gsap.fromTo(
   ".astronaut-2",
-  {  y: 0 , x : 0  },
+  { y: 300,
+    x: window.innerWidth/2   },
   {
-    y: 300,
-    x: window.innerWidth/2,
+    y: 0 , x : 0,
     // duration: 1,
     scrollTrigger: {
       trigger: ".astronaut-2",
@@ -81,7 +82,7 @@ gsap.fromTo(
 
 gsap.fromTo(
   ".leftBackground",
-  {  y: 500 },
+  {  y: 800 },
   {
     y: 10,
     // duration: 1,
@@ -166,10 +167,25 @@ function applyAnimation() {
   if (window.innerWidth >= 1000) {
     gsap.fromTo(
       ".buildings",
-      { y: 0, scale: 1.5 },
+      { y: 0, scale: 0.5 },
       {
         y: -200,
-        scale: 1,
+        scale: 1.5,
+        scrollTrigger: {
+          trigger: ".buildings",
+          toggleActions: "restart restart reverse reverse",
+          start: "top bottom",
+          end: "bottom top",
+          scrub: true,
+        },
+      }
+    );
+  }else{
+    gsap.fromTo(
+      ".buildings",
+      { scale: 1 },
+      {
+        scale: 1.5,
         scrollTrigger: {
           trigger: ".buildings",
           toggleActions: "restart restart reverse reverse",
@@ -205,10 +221,9 @@ gsap.fromTo(
   { left:  "calc(50% - " + circleWidth +" / 2)" },
   {
     left: -circleWidth/2,
-    duration: 0.2,
     scrollTrigger: {
       trigger: ".main-page-workshop-home-circle",
-      toggleActions: "restart restart none none",
+      toggleActions: "restart restart reverse reverse",
     },
   }
 );
@@ -217,10 +232,9 @@ gsap.fromTo(
   { left:  "calc(50% - " + circle1Width +" / 2)" },
   {
     left: -circle1Width/2,
-    duration: 0.2,
     scrollTrigger: {
       trigger: ".main-page-workshop-home-arc",
-      toggleActions: "restart restart none none",
+      toggleActions: "restart restart reverse reverse",
     },
   }
 );
@@ -229,10 +243,9 @@ gsap.fromTo(
   { left:  "calc(50% - " + circleOuterWidth +" / 2)" },
   {
     left: -circleOuterWidth/2,
-    duration: 0.2,
     scrollTrigger: {
       trigger: ".main-page-workshop-home-outer-circle2",
-      toggleActions: "restart restart none none",
+      toggleActions: "restart restart reverse reverse",
     },
   }
 );

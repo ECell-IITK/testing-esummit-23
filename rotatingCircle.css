@@ -100,7 +100,7 @@
 .panel::before {
     position: absolute;
     left: var(--left);
-    content: "60+ Startups";
+    content: "60+ Startups 60+ Startups";
     font-size: 70px;
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -296,7 +296,7 @@
 .panel1::before {
     position: absolute;
     left: var(--left);
-    content: "60+ Startups";
+    content: "60+ Startups   60+ Startups";
     font-size: 70px;
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -493,7 +493,7 @@
 .panel2::before {
     position: absolute;
     left: var(--left);
-    content: "15K+ Footfall";
+    content: "15K+ Footfall 15K+ Footfall";
     font-size: 70px;
     width: -webkit-max-content;
     width: -moz-max-content;

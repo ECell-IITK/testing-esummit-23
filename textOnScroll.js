@@ -14,9 +14,9 @@ window.onscroll = function(){
     let textBlocks = document.querySelectorAll(".side-texts-block");
     for(let i =0;i<textBlocks.length ;i+=1){
         if(i%2){
-            textBlocks[i].style.transform = "translateX( calc( -100px + " + scrollTop/10 + "px))";
+            textBlocks[i].style.transform = "translateX( calc( -100px + " + scrollTop/6 + "px))";
         }else{
-            textBlocks[i].style.transform = "translateX(-" + scrollTop/10 + "px)";
+            textBlocks[i].style.transform = "translateX(-" + scrollTop/6 + "px)";
         }
     }
 }

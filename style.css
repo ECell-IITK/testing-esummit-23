@@ -136,7 +136,7 @@ body::-webkit-scrollbar-thumb:active {
 .header-nav {
     /* visibility: hidden;   */
     list-style: none;
-    transform: translateX(100%);
+    transform: translateX(100vw);
     /* width: 00vw; */
     height: 100vh;
     border: 0;
@@ -148,20 +148,35 @@ body::-webkit-scrollbar-thumb:active {
     transition: transform .45s ease;
     /* transform: none; */
     position: fixed;
-    top: 0;
+    top: 60px;
+    right: -372px;
     z-index: 1;
-    background: rgba(3, 0, 20, .9);
+    /* background: rgba(3, 0, 20, .9); */
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     visibility: hidden;
     overflow: hidden;
 }
 
-.header-nav-active {
-    transform: translate(0%);
-    width: 100vw;
-    visibility: visible;
+.header-nav img{
+    position: absolute;
+    top: 0;
+    background: transparent;
+    height: calc(100vh - 50px);
 }
+
+.header-nav-active {
+    transform: translate(calc(100vw - 360px));
+    width: 360px;
+    padding-left: 27px;
+    visibility: visible;
+    /* background: url("./images/sidebar.png"); */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    /* padding-left: 30px; */
+}
+
+
 
 .header-nav div {
     align-items: center;
@@ -174,6 +189,9 @@ body::-webkit-scrollbar-thumb:active {
     display: flex;
     flex-direction: column;
     position: relative;
+    /* padding-left: 20px; */
+    margin-left: 30px;
+    width: fit-content;
 }
 
 .header-nav li::after {
@@ -186,6 +204,8 @@ body::-webkit-scrollbar-thumb:active {
     border-bottom: 1px solid #9f7ee6;
 }
 
+
+
 .header-nav a {
     text-decoration: none;
     margin-left: 24px;
@@ -195,6 +215,19 @@ body::-webkit-scrollbar-thumb:active {
     font-weight: 500;
     cursor: pointer;
     transition: transform 0.5s ease-out;
+}
+
+@media screen and (max-width:600px) {
+    .header-nav-active{
+        width: 250px;
+    transform: translate(calc(100vw - 250px));
+    }
+    .header-nav a{
+        font-size: 24px;
+    }
+    .header-nav li::after{
+        font-size: 24px;
+    }
 }
 
 .nav-about-us::after {
@@ -210,6 +243,11 @@ body::-webkit-scrollbar-thumb:active {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-style: inherit;
+    background: linear-gradient(91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+    
 }
 
 .nav-about-us:hover {
@@ -229,6 +267,14 @@ body::-webkit-scrollbar-thumb:active {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-style: inherit;
+    background: linear-gradient(91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background: linear-gradient(91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 .nav-get-merchandise:hover {
@@ -248,6 +294,14 @@ body::-webkit-scrollbar-thumb:active {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-style: inherit;
+    background: linear-gradient(91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background: linear-gradient(91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 .nav-speakers:hover {
@@ -267,6 +321,14 @@ body::-webkit-scrollbar-thumb:active {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-style: inherit;
+    background: linear-gradient(91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background: linear-gradient(91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 .nav-contact-us:hover {
@@ -286,6 +348,14 @@ body::-webkit-scrollbar-thumb:active {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-style: inherit;
+    background: linear-gradient(91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background: linear-gradient(91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 .nav-main-site:hover {
@@ -305,6 +375,10 @@ body::-webkit-scrollbar-thumb:active {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-style: inherit;
+    background: linear-gradient(91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 .nav-competitions:hover {
@@ -324,6 +398,10 @@ body::-webkit-scrollbar-thumb:active {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-style: inherit;
+    background: linear-gradient(91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 .nav-workshops:hover {

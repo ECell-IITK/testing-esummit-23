@@ -1,3 +1,5 @@
+// workshop circle
+
 var scrollTop =  (document.documentElement || document.body.parentNode || document.body).scrollTop
 // console.log(scrollTop)
 console.log(window.innerHeight)
@@ -42,3 +44,6 @@ elmntToView.scrollIntoView();
 //     var distanceScrolled = document.description.scrollTop;
 //     console.log('Scrolled: ' + distanceScrolled);
 // }
+
+
+// landing page

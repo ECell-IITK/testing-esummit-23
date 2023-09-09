@@ -5,7 +5,7 @@
     flex-flow: wrap;
     width: 100%;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-transform: uppercase;
 }
 .rotating-circle1 {
@@ -17,7 +17,7 @@
     place-items: center;
     perspective: 1000px;
     perspective-origin: 50% calc(50% - 300px);
-    height: 300px;
+    height: 200px;
     width: 300px;
     position: relative;
     /* top: 200px; */
@@ -34,7 +34,7 @@
     place-items: center;
     perspective: 1000px;
     perspective-origin: 50% calc(50% - 300px);
-    height: 300px;
+    height: 200px;
     width: 300px;
     position: relative;
     /* top: 200px; */
@@ -51,7 +51,7 @@
     place-items: center;
     perspective: 1000px;
     perspective-origin: 50% calc(50% - 300px);
-    height: 300px;
+    height: 200px;
     width: 300px;
     position: relative;
     /* top: 200px; */
@@ -101,7 +101,7 @@
     position: absolute;
     left: var(--left);
     content: "60+ Startups";
-    font-size: 96px;
+    font-size: 70px;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
@@ -297,7 +297,7 @@
     position: absolute;
     left: var(--left);
     content: "60+ Startups";
-    font-size: 96px;
+    font-size: 70px;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
@@ -494,7 +494,7 @@
     position: absolute;
     left: var(--left);
     content: "15K+ Footfall";
-    font-size: 96px;
+    font-size: 70px;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
@@ -689,7 +689,7 @@
     position: absolute;
     left: var(--left);
     content: "3 Product Launches";
-    font-size: 96px;
+    font-size: 70px;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;

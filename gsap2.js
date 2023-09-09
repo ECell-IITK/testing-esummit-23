@@ -48,10 +48,28 @@ gsap.fromTo(
   {  y: 200 , x : 100  },
   {
     y: 10,
-    x: 1000,
+    x: window.innerWidth - 50,
     // duration: 1,
     scrollTrigger: {
       trigger: ".what-is-esummit-astronaut",
+      toggleActions: "restart restart reverse reverse",
+      // markers: "true",
+      start: "top bottom", // Change this according to your needs
+      end: "bottom top", // Change this according to your needs
+      scrub: true, // Enables scrubbing
+    },
+  }
+);
+
+gsap.fromTo(
+  ".astronaut-2",
+  {  y: 0 , x : 0  },
+  {
+    y: 300,
+    x: window.innerWidth/2,
+    // duration: 1,
+    scrollTrigger: {
+      trigger: ".astronaut-2",
       toggleActions: "restart restart reverse reverse",
       // markers: "true",
       start: "top bottom", // Change this according to your needs
@@ -170,3 +188,51 @@ applyAnimation();
 // Add an event listener to recheck when the window is resized
 window.addEventListener("resize", applyAnimation);
 
+// workshop circle in landing page
+var circle = document.querySelector(".main-page-workshop-home-circle")
+var circleWidth = circle.offsetWidth;
+var circle1 = document.querySelector(".main-page-workshop-home-arc")
+var circle1Width  = circle1.offsetWidth;
+// var circle2 = document.querySelector(".main-page-workshop-home-outer-circle1")
+// var circle2Width = circle2.offsetWidth;
+var circleOuter = document.querySelector(".main-page-workshop-home-outer-circle2")
+var circleOuterWidth = circleOuter.offsetWidth;
+// console.log(circleWidth,circle1Width,circleOuterWidth)
+
+let elementsForWorkshop = [".main-page-workshop-home-circle",".main-page-workshop-home-arc",".main-page-workshop-home-outer-circle2"]
+gsap.fromTo(
+  ".main-page-workshop-home-circle",
+  { left:  "calc(50% - " + circleWidth +" / 2)" },
+  {
+    left: -circleWidth/2,
+    duration: 0.2,
+    scrollTrigger: {
+      trigger: ".main-page-workshop-home-circle",
+      toggleActions: "restart restart none none",
+    },
+  }
+);
+gsap.fromTo(
+  ".main-page-workshop-home-arc",
+  { left:  "calc(50% - " + circle1Width +" / 2)" },
+  {
+    left: -circle1Width/2,
+    duration: 0.2,
+    scrollTrigger: {
+      trigger: ".main-page-workshop-home-arc",
+      toggleActions: "restart restart none none",
+    },
+  }
+);
+gsap.fromTo(
+  ".main-page-workshop-home-outer-circle2",
+  { left:  "calc(50% - " + circleOuterWidth +" / 2)" },
+  {
+    left: -circleOuterWidth/2,
+    duration: 0.2,
+    scrollTrigger: {
+      trigger: ".main-page-workshop-home-outer-circle2",
+      toggleActions: "restart restart none none",
+    },
+  }
+);

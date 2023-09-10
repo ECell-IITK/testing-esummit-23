@@ -38,14 +38,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/PixiPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="shortcut icon" href="./index.html">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');
     </style>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/zub3tbp.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="particle.css">
     <link rel="stylesheet" href="competitionStyle.css">
     <link rel="stylesheet" href="cursor.css">
+    <link rel="stylesheet" href="rotatingCircle.css">
+    <link rel="stylesheet" href="style2.css">
     <script src="particle.min.js"></script>
     <!-- stats.js lib -->
     <!-- <script src="http://threejs.org/examples/js/libs/stats.min.js"></script> -->
@@ -74,17 +82,19 @@
     <div class="circle"></div>
     <div class="header" q:id="8">
         <div class="container-lg"><!--qv q:id=9 q:key=lnbu:Xr_0--><a href="#" class="logo-with-name header-logo"
-                q:key="gf_0"><img src="./images/logo esummit 2 4 (1).png" alt="Logo" class="logo-with-name-logo">
+                q:key="gf_0"><img src="./images/ecell-logo-with-name.png" alt="Logo" class="logo-with-name-logo">
                 <!-- <div class="logo-with-name-name">Reflect</div> -->
             </a><!--/qv-->
             <ul class="header-nav">
-                <li><a href="#" class="nav-about-us">About Us</a></li>
-                <li><a href="#" class="nav-get-merchandise">Get Merchandise</a></li>
-                <li><a href="./speakers.html" class="nav-speakers">Speakers</a></li>
-                <li><a href="#" class="nav-contact-us">Contact Us</a></li>
-                <li><a href="#" class="nav-main-site">Main Site</a></li>
-                <li><a href="./competitions.html" class="nav-competitions">Competitions</a></li>
+                <img src="./images/sidebar.png" alt="" srcset="">
+                <li><a href="#esummit-aftermovie" class="nav-about-us">About Us</a></li>
+                <!-- <li><a href="#" class="nav-get-merchandise">Get Merchandise</a></li> -->
+                <li><a href="#competition-heading" class="nav-competitions">Competitions</a></li>
                 <li><a href="./workshops.html" class="nav-workshops">Workshops</a></li>
+                <li><a href="./speakers.html" class="nav-speakers">Speakers</a></li>
+                <li><a href="#" class="nav-get-merchandise">Merchandise</a></li>
+                <!-- <li><a href="#" class="nav-contact-us">Contact Us</a></li> -->
+                <!-- <li><a href="#" class="nav-main-site">Main Site</a></li> -->
             </ul>
             <div class="header-actions">
                 <!-- <a href="" class="login">Login</a> -->
@@ -97,305 +107,579 @@
             </div>
         </div>
     </div>
-    <section class="hero" id="hero">
-        <div class="hero-content">
-            <a href="#ai" preventdefault:click="" class="hero-badge"
-                on:click="q-6bfc20d4.js#s_zE40IwnqUxE"><!--qv q:key=ZA_0--><svg width="24" height="24"
-                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" q:key="fe_0">
-                    <path
-                        d="M9 6.5C9 6.32741 8.86009 6.1875 8.6875 6.1875C7.65196 6.1875 6.8125 5.34804 6.8125 4.3125C6.8125 4.13991 6.67259 4 6.5 4C6.32741 4 6.1875 4.13991 6.1875 4.3125C6.1875 5.34804 5.34804 6.1875 4.3125 6.1875C4.13991 6.1875 4 6.32741 4 6.5C4 6.67259 4.13991 6.8125 4.3125 6.8125C5.34804 6.8125 6.1875 7.65196 6.1875 8.6875C6.1875 8.86009 6.32741 9 6.5 9C6.67259 9 6.8125 8.86009 6.8125 8.6875C6.8125 7.65196 7.65196 6.8125 8.6875 6.8125C8.86009 6.8125 9 6.67259 9 6.5Z"
-                        fill="url(#paint0_linear_536_7111)" style="mix-blend-mode:screen"></path>
-                    <path
-                        d="M9 6.5C9 6.32741 8.86009 6.1875 8.6875 6.1875C7.65196 6.1875 6.8125 5.34804 6.8125 4.3125C6.8125 4.13991 6.67259 4 6.5 4C6.32741 4 6.1875 4.13991 6.1875 4.3125C6.1875 5.34804 5.34804 6.1875 4.3125 6.1875C4.13991 6.1875 4 6.32741 4 6.5C4 6.67259 4.13991 6.8125 4.3125 6.8125C5.34804 6.8125 6.1875 7.65196 6.1875 8.6875C6.1875 8.86009 6.32741 9 6.5 9C6.67259 9 6.8125 8.86009 6.8125 8.6875C6.8125 7.65196 7.65196 6.8125 8.6875 6.8125C8.86009 6.8125 9 6.67259 9 6.5Z"
-                        fill="white" fill-opacity="0.5"></path>
-                    <path
-                        d="M16.5 6C16.5 5.72386 16.2761 5.5 16 5.5C15.7239 5.5 15.5 5.72386 15.5 6C15.5 8.48488 13.4852 10.5 11 10.5C10.7239 10.5 10.5 10.7239 10.5 11C10.5 11.2761 10.7239 11.5 11 11.5C13.4853 11.5 15.5 13.5142 15.5 16C15.5 16.2761 15.7239 16.5 16 16.5C16.2761 16.5 16.5 16.2761 16.5 16C16.5 13.5141 18.5141 11.5 21 11.5C21.2761 11.5 21.5 11.2761 21.5 11C21.5 10.7239 21.2761 10.5 21 10.5C18.5142 10.5 16.5 8.48492 16.5 6Z"
-                        fill="url(#paint1_linear_536_7111)" style="mix-blend-mode:screen"></path>
-                    <path
-                        d="M16.5 6C16.5 5.72386 16.2761 5.5 16 5.5C15.7239 5.5 15.5 5.72386 15.5 6C15.5 8.48488 13.4852 10.5 11 10.5C10.7239 10.5 10.5 10.7239 10.5 11C10.5 11.2761 10.7239 11.5 11 11.5C13.4853 11.5 15.5 13.5142 15.5 16C15.5 16.2761 15.7239 16.5 16 16.5C16.2761 16.5 16.5 16.2761 16.5 16C16.5 13.5141 18.5141 11.5 21 11.5C21.2761 11.5 21.5 11.2761 21.5 11C21.5 10.7239 21.2761 10.5 21 10.5C18.5142 10.5 16.5 8.48492 16.5 6Z"
-                        fill="white" fill-opacity="0.5"></path>
-                    <path
-                        d="M7.5 12.5C7.5 12.2239 7.27614 12 7 12C6.72386 12 6.5 12.2239 6.5 12.5C6.5 14.1569 5.15686 15.5 3.5 15.5C3.22386 15.5 3 15.7239 3 16C3 16.2761 3.22386 16.5 3.5 16.5C5.15686 16.5 6.5 17.8431 6.5 19.5C6.5 19.7761 6.72386 20 7 20C7.27614 20 7.5 19.7761 7.5 19.5C7.5 17.8431 8.84314 16.5 10.5 16.5C10.7761 16.5 11 16.2761 11 16C11 15.7239 10.7761 15.5 10.5 15.5C8.84314 15.5 7.5 14.1569 7.5 12.5Z"
-                        fill="url(#paint2_linear_536_7111)" style="mix-blend-mode:screen"></path>
-                    <path
-                        d="M7.5 12.5C7.5 12.2239 7.27614 12 7 12C6.72386 12 6.5 12.2239 6.5 12.5C6.5 14.1569 5.15686 15.5 3.5 15.5C3.22386 15.5 3 15.7239 3 16C3 16.2761 3.22386 16.5 3.5 16.5C5.15686 16.5 6.5 17.8431 6.5 19.5C6.5 19.7761 6.72386 20 7 20C7.27614 20 7.5 19.7761 7.5 19.5C7.5 17.8431 8.84314 16.5 10.5 16.5C10.7761 16.5 11 16.2761 11 16C11 15.7239 10.7761 15.5 10.5 15.5C8.84314 15.5 7.5 14.1569 7.5 12.5Z"
-                        fill="white" fill-opacity="0.5"></path>
-                    <defs>
-                        <linearGradient id="paint0_linear_536_7111" x1="3" y1="20" x2="21.5" y2="20.0025"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#E59CFF"></stop>
-                            <stop offset="0.5" stop-color="#BA9CFF"></stop>
-                            <stop offset="1" stop-color="#9CB2FF"></stop>
-                        </linearGradient>
-                        <linearGradient id="paint1_linear_536_7111" x1="3" y1="20" x2="21.5" y2="20.0025"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#E59CFF"></stop>
-                            <stop offset="0.5" stop-color="#BA9CFF"></stop>
-                            <stop offset="1" stop-color="#9CB2FF"></stop>
-                        </linearGradient>
-                        <linearGradient id="paint2_linear_536_7111" x1="3" y1="20" x2="21.5" y2="20.0025"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#E59CFF"></stop>
-                            <stop offset="0.5" stop-color="#BA9CFF"></stop>
-                            <stop offset="1" stop-color="#9CB2FF"></stop>
-                        </linearGradient>
-                    </defs>
-                </svg><!--/qv-->
-                <div class="hero-badge-text">Get our latest Merchandise Now</div>
-            </a>
-            <div class="section-header-title-desktop">
-                <span>ESummit'23</span>
-            </div>
-            <p class="hero-description">Ideate.Innovate.Incubate.</p>
+    <!-- <div class="landing-page">
+        <img src="images/EsummitTypeface.png" alt="" srcset="">
+    </div> -->
+
+    <div class="heaven-to-city">
+        <!-- <div class="rotating-circle">
+            <div class="scene">
+                <div class="banner">
+                 <div class="panel"></div>
+                 <div class="panel"></div>
+                 <div class="panel"></div>
+                 <div class="panel"></div>
+                 <div class="panel"></div>
+                  <div class="panel"></div>
+                  <div class="panel"></div>
+                  <div class="panel"></div>
+                  <div class="panel"></div>
+                  <div class="panel"></div>
+                  <div class="panel"></div>
+                  <div class="panel"></div>
+                  <div class="panel"></div>
+                  <div class="panel"></div>
+                  <div class="panel"></div>
+                  <div class="panel"></div>
+                  <div class="panel"></div>
+                  <div class="panel"></div>
+                  <div class="panel"></div>
+                  <div class="panel"></div>
+                  <div class="panel"></div>
+                  <div class="panel"></div>
+                  <div class="panel"></div>
+                  <div class="panel"></div>
+                </div>
+                <div class="screen"></div>
+              </div>
+        </div> -->
+        <!-- <img class="building-cyberpunk" src="./images/backgroundOfCity.png" alt=""> -->
+        <div class="building-cyberpunk">
+            <img class="typeface" src="images/EsummitTypeface.png" alt="" srcset="">
+            <img class="buildings-cyberpunk-up" src="./images/landing.png" alt="" srcset="">
+            <img class="cloud-front" src="./images/cloud front 2 1.png" alt="" srcset="">
+            <img class="buildings" src="./images/buildings.png" alt="" srcset="">
         </div>
-        <div class="hero-black-hole hero-black-hole-visible">
-            <div class="lazy-video lazy-video-loaded">
-                <video controls class="video" preload muted autoplay loop id="vid">
-                    <source src="videos/q-c3d7becf.mp4" type="video/mp4" />
-                    <source src="videos/q-c3d7becf.webm" type="video/webm" />
-                </video>
-            </div>
-            <div class="introduction-video">
-                <div class="introduction-video-inner">
-                    <video controls class="video" preload muted autoplay loop>
-                        <source src="videos/50 Days To Go.mp4" type="video/mp4" />
-                        <source src="videos/50 days to goLow.mp4" type="video/mp4" media="all and (max-width: 480px)" />
+        <div class="landing-page-content">
+            <!-- <img class="buildings-cyberpunk-down" src="./images/landing.png" alt="" srcset=""> -->
+            <img class="leftBackground" src="./images/leftBackground.png" alt="" srcset="">
+            <img class="rightBackground" src="./images/rightBackground.png" alt="" srcset="">
+
+            <div class="sliding-text-animation">
+                <div class="side-texts">
+                    <div class="side-texts-block">
+                        <span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span>
+                    </div>
+                    <div class="side-texts-block">
+                        <span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span>
+                    </div>
+                    <div class="side-texts-block">
+                        <span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span>
+                    </div>
+                    <div class="side-texts-block">
+                        <span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span>
+                    </div>
+                    <div class="side-texts-block">
+                        <span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span>
+                    </div>
+                    <div class="side-texts-block">
+                        <span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF
+                            INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span>
+                    </div>
+                </div>
+                <div class="esummit-aftermovie" id="esummit-aftermovie">
+                    <img class="videoFrameOfAfterMovie" src="./images/videoFrameAftermovie.png" alt="" srcset="">
+                    <video controls muted autoplay>
+                        <source src="./videos/aftermovie.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
-
-        </div>
-    </section>
-
-
-
-
-    <section class="about">
-        <img src="./images/q-6c12dbae.png" alt="" srcset="">
-        <div id="particles-js"></div>
-        <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-        <div class="theme-revealer">
-            <div class="side-texts">
-                <div class="side-texts-block">
-                    <span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span>
-                </div>
-                <div class="side-texts-block">
-                    <span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span>
-                </div>
-                <div class="side-texts-block">
-                    <span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span>
-                </div>
-                <div class="side-texts-block">
-                    <span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span>
-                </div>
-                <!-- <div class="side-texts-block">
-                    <span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span><span>ESUMMIT'23</span><span>THEME</span><span>INQUISITION OF INFINITY</span>
-                </div> -->
-            </div>
-            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen allow="autoplay">
-            </iframe>
-        </div>
-        <div class="about-content">
             <div class="what-is-esummit">
-                <h1>What is ESummit</h1>
-                E-Summit being the flagship event of E-Cell, is held annually brings together the academic community,
-                venture capitalists, new age entrepreneurs and all those passionate about entrepreneurship to common
-                grounds
+                <img class="what-is-esummit-astronaut" src="./images/astronaut.png" alt="" srcset="">
+                <img class="what-is-esummit-img" src="./images/whatIsEsummit.png" alt="" srcset="">
+                <img class="what-is-esummit-vector" src="./images/whatIsEsummitVector.png" alt="" srcset="">
+                <div class="what-is-esummit-heading">WHAT IS <br> E-SUMMIT?</div>
+                <div class="what-is-esummit-content">
+                    E-Summit being the flagship event of E-Cell, is held annually brings together the academic
+                    community, venture capitalists, new age entrepreneurs and all those passionate about
+                    entrepreneurship to common grounds. It provides an avenue to exhibit the entrepreneurial talent and
+                    creativity through many events like business ventures, product design competition, and social
+                    entrepreneurial idea competition.
+                </div>
             </div>
-            <div class="inquisition-of-infinity">
-                <h1>Inquisition Of Infinity</h1>
-                The theme "Inquisition of Infinity" seeks to inspire a spirit of challenging conventional thinking,
-                fostering an environment where attendees can boldly explore, innovate, and redefine the boundaries of
-                what is possible in their entrepreneurial pursuits.
+            <div class="esummit-theme">
+                <img class="astronaut-2" src="./images/astronaut2.png" alt="" srcset="">
+                <div class="esummit-theme-left">
+                    <img class="themeVector" src="./images/themeVector.png" alt="" srcset="">
+                    <div class="esummit-theme-heading">E-SUMMIT'23- <br> INQUISITION OF INFINITY </div>
+                    <div class="esummit-theme-content">
+                        E-Summit being the flagship event of E-Cell, is held annually brings together the academic
+                        community, venture capitalists, new age entrepreneurs and all those passionate about
+                        entrepreneurship to common grounds. It provides an avenue to exhibit the entrepreneurial talent
+                        and creativity through many events like business ventures, product design competition, and
+                        social entrepreneurial idea competition.
+                    </div>
+                </div>
+                <div class="esummit-theme-right">
+                    <img src="./images/theme.png" alt="" srcset="">
+                    <div class="esummit-theme-right-content">
+                        <span>E-SUMMIT'23
+                            THEME </span> <br>
+                        E-Summit being the flagship event of E-Cell, is held annually brings together the academic
+                        community.
+                    </div>
+                </div>
+            </div>
+            <div class="rotating-circles-section">
+                <div class="rotating-circle1">
+                    <div class="scene1">
+                        <div class="banner1">
+                            <div class="panel1"></div>
+                            <div class="panel1"></div>
+                            <div class="panel1"></div>
+                            <div class="panel1"></div>
+                            <div class="panel1"></div>
+                            <div class="panel1"></div>
+                            <div class="panel1"></div>
+                            <div class="panel1"></div>
+                            <div class="panel1"></div>
+                            <div class="panel1"></div>
+                            <div class="panel1"></div>
+                            <div class="panel1"></div>
+                            <div class="panel1"></div>
+                            <div class="panel1"></div>
+                            <div class="panel1"></div>
+                            <div class="panel1"></div>
+                            <div class="panel1"></div>
+                            <div class="panel1"></div>
+                            <div class="panel1"></div>
+                            <div class="panel1"></div>
+                            <div class="panel1"></div>
+                            <div class="panel1"></div>
+                            <div class="panel1"></div>
+                            <div class="panel1"></div>
+                        </div>
+                        <div class="screen1"></div>
+                    </div>
+                </div>
+                <div class="rotating-circle2">
+                    <div class="scene2">
+                        <div class="banner2">
+                            <div class="panel2"></div>
+                            <div class="panel2"></div>
+                            <div class="panel2"></div>
+                            <div class="panel2"></div>
+                            <div class="panel2"></div>
+                            <div class="panel2"></div>
+                            <div class="panel2"></div>
+                            <div class="panel2"></div>
+                            <div class="panel2"></div>
+                            <div class="panel2"></div>
+                            <div class="panel2"></div>
+                            <div class="panel2"></div>
+                            <div class="panel2"></div>
+                            <div class="panel2"></div>
+                            <div class="panel2"></div>
+                            <div class="panel2"></div>
+                            <div class="panel2"></div>
+                            <div class="panel2"></div>
+                            <div class="panel2"></div>
+                            <div class="panel2"></div>
+                            <div class="panel2"></div>
+                            <div class="panel2"></div>
+                            <div class="panel2"></div>
+                            <div class="panel2"></div>
+                        </div>
+                        <div class="screen2"></div>
+                    </div>
+                </div>
+                <div class="rotating-circle3">
+                    <div class="scene3">
+                        <div class="banner3">
+                            <div class="panel3"></div>
+                            <div class="panel3"></div>
+                            <div class="panel3"></div>
+                            <div class="panel3"></div>
+                            <div class="panel3"></div>
+                            <div class="panel3"></div>
+                            <div class="panel3"></div>
+                            <div class="panel3"></div>
+                            <div class="panel3"></div>
+                            <div class="panel3"></div>
+                            <div class="panel3"></div>
+                            <div class="panel3"></div>
+                            <div class="panel3"></div>
+                            <div class="panel3"></div>
+                            <div class="panel3"></div>
+                            <div class="panel3"></div>
+                            <div class="panel3"></div>
+                            <div class="panel3"></div>
+                            <div class="panel3"></div>
+                            <div class="panel3"></div>
+                            <div class="panel3"></div>
+                            <div class="panel3"></div>
+                            <div class="panel3"></div>
+                            <div class="panel3"></div>
+                        </div>
+                        <div class="screen3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="what-we-do">
+                <div class="what-we-do-heading">
+                    WHAT WE DO
+                </div>
+                <div class="what-we-do-content">
+                    <div class="what-we-do-card">
+                        <img src="./images/networkingDinner.png" alt="" srcset="">
+                        <div class="read-more-what-we-do">
+                            <a href="https://www.ecelliitk.org">read more</a>
+                        </div>
+                        <div class="what-we-do-card-content">
+                            E-Summit being the flagship event of E-Cell, is held annually brings together the academic
+                            community, venture capitalists, new age entrepreneurs and all those passionate about.
+                        </div>
+                    </div>
+                    <div class="what-we-do-card">
+                        <img src="./images/startupExpo.png" alt="" srcset="">
+                        <div class="read-more-what-we-do" style="left:40px">
+                            <a href="https://www.ecelliitk.org/expo/">read more</a>
+                        </div>
+                        <div class="what-we-do-card-content">
+                            E-Summit being the flagship event of E-Cell, is held annually brings together the academic
+                            community, venture capitalists, new age entrepreneurs and all those passionate about.
+                        </div>
+                    </div>
+                    <div class="what-we-do-card">
+                        <img src="./images/upstart.png" alt="" srcset="">
+                        <div class="read-more-what-we-do" style="left:70px">
+                            <a href="https://www.ecelliitk.org/upstart/">read more</a>
+                        </div>
+                        <div class="what-we-do-card-content">
+                            E-Summit being the flagship event of E-Cell, is held annually brings together the academic
+                            community, venture capitalists, new age entrepreneurs and all those passionate about.
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-
-    <!-- Competitions -->
-    <div class="competition-heading">
-        <img src="./images/competitions/heading.png" alt="" srcset="">
     </div>
-    <div class="competition-content-outer">
-        <!-- <div class="competition-content-card">
+    <div class="downtown">
+        <img class="downtownBackground" src="./images/backgroundDown.png" alt="">
+
+        <!-- Competitions -->
+        <div class="competition-heading" id="competition-heading">
+            <img src="./images/competitions/heading.png" alt="" srcset="">
+        </div>
+        <div class="competition-content-outer">
+            <!-- <div class="competition-content-card">
             <div class="competition-content-blob"></div>
         </div> -->
-        <div class="competition-content" id="comp1">
-            <div class="competition-content-section">
-                <div class="competition-content-section-left">
-                    <h1>Decrypt</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo dolorem dolorum laboriosam odit
-                        dicta
-                        consequatur libero fugiat eum. Obcaecati exercitationem cupiditate ipsa nobis reiciendis qui
-                        quos
-                        hic enim delectus, ad recusandae! Esse, quaerat. Eius!</p>
-                </div>
-                <div class="competition-content-section-right">
-                    <div class="competition-content-section-right-blur-background"></div>
+            <div class="competition-content-outer-heading">
+                COMPETITIONS
+            </div>
+            <div class="competition-content" id="comp1">
+                <div class="competition-content-section">
+                    <div class="competition-content-section-left">
+                        <h1>Decrypt</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo dolorem dolorum laboriosam
+                            odit
+                            dicta
+                            consequatur libero fugiat eum. Obcaecati exercitationem cupiditate ipsa nobis reiciendis qui
+                            quos
+                            hic enim delectus, ad recusandae! Esse, quaerat. Eius!</p>
+                    </div>
+                    <div class="competition-content-section-right">
+                        <div class="competition-content-section-right-blur-background"></div>
 
-                    <img src="./images/competitions/decrypt-logo.png" alt="" srcset="">
-                    <div class="competition-read-more"><a href="./competitions_pages/comp1.html">READ MORE</a></div>
+                        <img src="./images/competitions/decrypt-logo.png" alt="" srcset="">
+                        <div class="competition-read-more"><a href="./competitions_pages/comp1.html">READ MORE</a></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="competition-content" id="comp2">
-            <div class="competition-content-section">
-                <div class="competition-content-section-left">
-                    <h1>Decrypt</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo dolorem dolorum laboriosam odit
-                        dicta
-                        consequatur libero fugiat eum. Obcaecati exercitationem cupiditate ipsa nobis reiciendis qui
-                        quos
-                        hic enim delectus, ad recusandae! Esse, quaerat. Eius!</p>
-                </div>
-                <div class="competition-content-section-right">
-                    <div class="competition-content-section-right-blur-background"></div>
-                    <img src="./images/competitions/decrypt-logo.png" alt="" srcset="">
-                    <div class="competition-read-more"><a href="./competitions_pages/comp1.html">READ MORE</a></div>
-                </div>
-            </div>
-        </div>
-        <div class="competition-content" id="comp3">
-            <div class="competition-content-section">
-                <div class="competition-content-section-left">
-                    <h1>Decrypt</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo dolorem dolorum laboriosam odit
-                        dicta
-                        consequatur libero fugiat eum. Obcaecati exercitationem cupiditate ipsa nobis reiciendis qui
-                        quos
-                        hic enim delectus, ad recusandae! Esse, quaerat. Eius!</p>
-                </div>
-                <div class="competition-content-section-right">
-                    <div class="competition-content-section-right-blur-background"></div>
-                    <img src="./images/competitions/decrypt-logo.png" alt="" srcset="">
-                    <div class="competition-read-more"><a href="./competitions_pages/comp1.html">READ MORE</a></div>
+            <div class="competition-content" id="comp2">
+                <div class="competition-content-section">
+                    <div class="competition-content-section-left">
+                        <h1>Decrypt</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo dolorem dolorum laboriosam
+                            odit
+                            dicta
+                            consequatur libero fugiat eum. Obcaecati exercitationem cupiditate ipsa nobis reiciendis qui
+                            quos
+                            hic enim delectus, ad recusandae! Esse, quaerat. Eius!</p>
+                    </div>
+                    <div class="competition-content-section-right">
+                        <div class="competition-content-section-right-blur-background"></div>
+                        <img src="./images/competitions/decrypt-logo.png" alt="" srcset="">
+                        <div class="competition-read-more"><a href="./competitions_pages/comp1.html">READ MORE</a></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="competition-content" id="comp4">
-            <div class="competition-content-section">
-                <div class="competition-content-section-left">
-                    <h1>Decrypt</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo dolorem dolorum laboriosam odit
-                        dicta
-                        consequatur libero fugiat eum. Obcaecati exercitationem cupiditate ipsa nobis reiciendis qui
-                        quos
-                        hic enim delectus, ad recusandae! Esse, quaerat. Eius!</p>
+            <div class="competition-content" id="comp3">
+                <div class="competition-content-section">
+                    <div class="competition-content-section-left">
+                        <h1>Decrypt</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo dolorem dolorum laboriosam
+                            odit
+                            dicta
+                            consequatur libero fugiat eum. Obcaecati exercitationem cupiditate ipsa nobis reiciendis qui
+                            quos
+                            hic enim delectus, ad recusandae! Esse, quaerat. Eius!</p>
+                    </div>
+                    <div class="competition-content-section-right">
+                        <div class="competition-content-section-right-blur-background"></div>
+                        <img src="./images/competitions/decrypt-logo.png" alt="" srcset="">
+                        <div class="competition-read-more"><a href="./competitions_pages/comp1.html">READ MORE</a></div>
+                    </div>
                 </div>
-                <div class="competition-content-section-right">
-                    <div class="competition-content-section-right-blur-background"></div>
+            </div>
+            <div class="competition-content" id="comp4">
+                <div class="competition-content-section">
+                    <div class="competition-content-section-left">
+                        <h1>Decrypt</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo dolorem dolorum laboriosam
+                            odit
+                            dicta
+                            consequatur libero fugiat eum. Obcaecati exercitationem cupiditate ipsa nobis reiciendis qui
+                            quos
+                            hic enim delectus, ad recusandae! Esse, quaerat. Eius!</p>
+                    </div>
+                    <div class="competition-content-section-right">
+                        <div class="competition-content-section-right-blur-background"></div>
 
-                    <img src="./images/competitions/decrypt-logo.png" alt="" srcset="">
-                    <div class="competition-read-more"><a href="./competitions.html">READ MORE</a></div>
+                        <img src="./images/competitions/decrypt-logo.png" alt="" srcset="">
+                        <div class="competition-read-more"><a href="./competitions.html">READ MORE</a></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="competition-content" id="comp5">
-            <div class="competition-content-section">
-                <div class="competition-content-section-left">
-                    <h1>Decrypt</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo dolorem dolorum laboriosam odit
-                        dicta
-                        consequatur libero fugiat eum. Obcaecati exercitationem cupiditate ipsa nobis reiciendis qui
-                        quos
-                        hic enim delectus, ad recusandae! Esse, quaerat. Eius!</p>
-                </div>
-                <div class="competition-content-section-right">
-                    <div class="competition-content-section-right-blur-background"></div>
+            <div class="competition-content" id="comp5">
+                <div class="competition-content-section">
+                    <div class="competition-content-section-left">
+                        <h1>Decrypt</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo dolorem dolorum laboriosam
+                            odit
+                            dicta
+                            consequatur libero fugiat eum. Obcaecati exercitationem cupiditate ipsa nobis reiciendis qui
+                            quos
+                            hic enim delectus, ad recusandae! Esse, quaerat. Eius!</p>
+                    </div>
+                    <div class="competition-content-section-right">
+                        <div class="competition-content-section-right-blur-background"></div>
 
-                    <img src="./images/competitions/decrypt-logo.png" alt="" srcset="">
-                    <div class="competition-read-more"><a href="./competitions.html">READ MORE</a></div>
+                        <img src="./images/competitions/decrypt-logo.png" alt="" srcset="">
+                        <div class="competition-read-more"><a href="./competitions.html">READ MORE</a></div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="workshop-downtown">
+            <img class="workshop-downtown-background" src="./images/workshopBackground (2).png" alt="" srcset="">
+            <div class="workshop-downtown-heading">
+                WORKSHOP
+            </div>
+            <div class="workshop-downtown-content">
+                <div class="workshop-downtown-cotent-content-card">
+                    <img src="./images/workshop1.png" alt="" class="workshop-downtown-cotent-content-card-img">
+                    <a href="./workshops.html">
+                        <button>READ MORE</button>
+                    </a>
+                </div>
+                <div class="workshop-downtown-cotent-content-card">
+                    <img src="./images/workshop1.png" alt="" class="workshop-downtown-cotent-content-card-img">
+                    <a href="./workshops.html">
+                        <button>READ MORE</button>
+                    </a>
+                </div>
+                <div class="workshop-downtown-cotent-content-card">
+                    <img src="./images/workshop1.png" alt="" class="workshop-downtown-cotent-content-card-img">
+                    <a href="./workshops.html">
+                        <button>READ MORE</button>
+                    </a>
+                </div>
+            </div>
+            <div class="workshop-downtown-content">
+                <div class="workshop-downtown-cotent-content-card">
+                    <img src="./images/workshop1.png" alt="" class="workshop-downtown-cotent-content-card-img">
+                    <a href="./workshops.html">
+                        <button>READ MORE</button>
+                    </a>
+                </div>
+                <div class="workshop-downtown-cotent-content-card">
+                    <img src="./images/workshop1.png" alt="" class="workshop-downtown-cotent-content-card-img">
+                    <a href="./workshops.html">
+                        <button>READ MORE</button>
+                    </a>
+                </div>
+            </div>
+            <div class="main-page-workshop-home-circle"></div>
+            <!-- <div class="main-page-workshop-home-outer-circle1"></div> -->
+            <div class="main-page-workshop-home-outer-circle2"></div>
+            <div class="main-page-workshop-home-arc"></div>
+        </div>
+        <div class="main-page-speaker-section">
+            <div id="particles-js"></div>
+
+            <div class="main-page-speaker-section-heading">SPEAKER</div>
+            <div class="main-page-speaker-section-content">
+                <div class="main-page-speaker-card">
+                    <img src="./images/speakerPhoto.png" alt="" srcset="">
+                </div>
+                <div class="main-page-speaker-card">
+                    <img src="./images/speakerPhoto.png" alt="" srcset="">
+                </div>
+                <div class="main-page-speaker-card">
+                    <img src="./images/speakerPhoto.png" alt="" srcset="">
+                </div>
+                <div class="main-page-speaker-card">
+                    <img src="./images/speakerPhoto.png" alt="" srcset="">
+                </div>
+            </div>
+            <div class="main-page-speaker-section-content">
+                <div class="main-page-speaker-card">
+                    <img src="./images/speakerPhoto.png" alt="" srcset="">
+                </div>
+                <div class="main-page-speaker-card">
+                    <img src="./images/speakerPhoto.png" alt="" srcset="">
+                </div>
+                <div class="main-page-speaker-card">
+                    <img src="./images/speakerPhoto.png" alt="" srcset="">
+                </div>
+                <div class="main-page-speaker-card">
+                    <img src="./images/speakerPhoto.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__addr">
+                <h1 class="footer__logo">
+                    <img src="./images/ecell-logo-with-name.png" alt="" srcset="">
+                </h1>
+
+                <!-- <h2>Address</h2> -->
+                <!-- <h2>Address</h2> -->
+
+                <address>
+                    E-Cell, IIT Kanpur aims to induce an entrepreneurial mindset into the students and air an innovative streak in them. We are here to water the ‘Ideas’ in the bud and help them bloom into impactful endeavors through networking student enterprises from campus to incubators, seeding funds and angel investors to transform the newly proposed ideas into successful start-ups.<br>
+
+                    <a class="footer__btn" href="mailto:esummit@ecelliitk.com">Email Us</a>
+                </address>
+                <!-- <address>
+                    Room No G2,
+                    Imagineering Laboratory
+                    Gate No. 4 Academic Area Near DOAA canteen
+                    IIT Kanpur- 208016<br>
+
+                    <a class="footer__btn" href="mailto:esummit@ecelliitk.com">Email Us</a>
+                </address> -->
+            </div>
+
+            <ul class="footer__nav">
+                
+                <li class="nav__item">
+                    <h2 class="nav__title">Quick Links</h2>
+
+                    <ul class="nav__ul">
+                        <li>
+                            <a href="https://www.ecelliitk.org/">ECell IITK</a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.ecelliitk.org/upstart">Upstart</a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.ecelliitk.org/expo">Startup Expo</a>
+                        </li>
+                        <li>
+                            <a href="https://www.ecelliitk.org/#contact">Team</a>
+                        </li>
+                    </ul>
+                </li>
+
+
+
+                <li class="nav__item">
+                    <h2 class="nav__title">
+                        Reach Out
+                    </h2>
+
+                    <ul class="nav__ul">
+                        <li>
+                            <a href="#">Room No G2,
+                                Imagineering Laboratory
+                                Gate No. 4 Academic Area Near DOAA canteen
+                                IIT Kanpur- 208016</a>
+                        </li>
+
+                        <li>
+                            <a href="#">esummit@ecelliitk.com</a>
+                        </li>
+
+                        <!-- <li>
+                            <a href="#">Sitemap</a>
+                        </li> -->
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="legal">
+                <p>&copy; 2023 Something. All rights reserved.</p>
+
+                <div class="legal__links">
+                    <!-- <span>Made with <span class="heart">♥</span> remotely from Anywhere</span> -->
+                    <a href="#"><i class="fa fa-brands fa-facebook fa-2x"></i></a>
+                    <!-- <i class="fa-brands fa-instagram"></i> -->
+                    <a href="#"><i class=" fa fa-brands fa-instagram fa-2x"></i></a>
+					<a href="#"><i class="fa fa-brands fa-twitter fa-2x"></i></a>
+					<a href="#"><i class="fa fa-brands fa-linkedin fa-2x"></i></a>
+					<a href="#"><i class="fa fa-brands fa-youtube fa-2x"></i></a>
+                </div>
+            </div>
+        </footer>
     </div>
-
-    <!-- <section class="speakers" id="speakers">
-        <h1>Speakers</h1>
-        <div class="speakers-main-container-mobile">
-            <div class="speakers-background-mobile"></div>
-            <div class="cutout-box">
-                <img id="speaker1" src="./images/speaker2-removebg-preview.png">
-                <img id="speaker2" src="./images/speaker1-removebg-preview.png">
-                <img id="speaker3" src="./images/speaker3-removebg-preview.png">
-                <img id="speaker4" src="./images/speaker4-removebg-preview.png">
-            </div>
-        </div>
-
-    </section> -->
-    <!-- <footer>
-        <div class="footer">
-            <button class="footer-back-to-top"><a href="#hero">Back to Top</a></button>
-            <div class="footer-bottom">
-                <div class="back-to-top"><button class="footer-text" style="color: white;">BACK TO TOP <img
-                            class="upper-arrow" src="./images/eject.png" alt=""></button></div>
-                <div class="social">
-                    <a href=""><img src="./images/facebook.png" alt="" class="icon"></a>
-                    <a href=""><img src="./images/messenger.png" alt="" class="icon"></a>
-                    <a href=""><img src="./images/linkedin.png" alt="" class="icon"></a>
-                    <a href=""><img src="./images/instagram.png" alt="" class="icon"></a>
-                </div>
-                <div class="moto-cover">
-                    <div class="moto">
-                        <img class="image" src="./images/e summit logo brown.png" alt="" width="237.85px">
-                        <p style="font-size: 20px;">Organised <br> by</p>
-                        <img class="image" src="./images/ecell-logo.png" alt="" width="150px">
-                    </div>
-                </div>
-                <div class="contacts">
-                    <a class="email" href="mailto:connect@ecelliitk.org">
-                        <p style="display: flex; align-items: center; color: white; font-size: 16px;">
-                            <img src="./images/web.png" class="icon" alt=""
-                                style="margin: 0 10px;">connect@ecelliitk.com
-                        </p>
-                    </a>
-                    <a class="email" href="mailto:ecell@iitk.ac.in">
-                        <p style="display: flex; align-items: center; color: white; font-size: 16px;">
-                            <img src="./images/mail.png" class="icon" alt="" style="margin: 0 10px;">ecell@iitk.ac.in
-                        </p>
-                    </a>
-                    <p class="email" style="display: flex; align-items: center; font-size: 16px;">
-                        <img src="./images/pngwing.com.png" class="icon" alt="" style="margin: 0 10px;">+91 9650913301
-                    </p>
-                </div>
-
-                <div class="contacts750">
-                    <div class="connect">
-                        <a class="email" href="mailto:connect@ecelliitk.org">
-                            <p
-                                style="display: flex; align-items: center; color: white; font-size: 16px; justify-content: center; margin: 10px;">
-                                <img src="./images/web.png" class="icon" alt=""
-                                    style="margin: 0 10px;">connect@ecelliitk.com
-                            </p>
-                        </a>
-                    </div>
-                    <div class="mail">
-                        <a class="email" href="mailto:ecell@iitk.ac.in">
-                            <p
-                                style="display: flex; align-items: center; color: white; font-size: 16px; justify-content: center; margin: 10px;">
-                                <img src="./images/mail.png" class="icon" alt=""
-                                    style="margin: 0 10px;">ecell@iitk.ac.in
-                            </p>
-                        </a>
-                    </div>
-                    <div class="phone">
-                        <p class="email"
-                            style="display: flex; align-items: center; font-size: 16px; justify-content: center; margin: 15px;">
-                            <img src="./images/pngwing.com.png" class="icon" alt="" style="margin: 0 10px;">+91
-                            9650913301
-                        </p>
-                    </div>
-
-                </div>
-
-                <p class="address" style="text-align: center; margin: 4px 0;">Enterpreneruship Cell, IIT Kanpur, Kanpur,
-                    Uttar Pradesh, 208016</p>
-                <hr>
-                <div class="footer-copyright" style="font-size: 15px;">Enterpreneruship Cell, &copy;2023 All Rights
-                    Reserved</div>
-            </div>
-        </div>
-    </footer> -->
-
     <script>
         let hamburgerIcon = document.querySelector(".header-toggle")
         let nav = document.querySelector(".header-nav")
@@ -404,71 +688,13 @@
             hamburgerIcon.classList.toggle("header-toggle-active")
             nav.classList.toggle("header-nav-active")
         })
-        // console.log(hamburgerIcon)
-
     </script>
     <script src="particle.js"></script>
     <script src="gsap.js"></script>
     <script src="cursor.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <!-- <script>
-        const rnd = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
-        const colorsBlob = ["#BF547B", "#AC79F2", "#9196F2", "#B6C5F2", "#F2D0BD"];
-        const rndBorderRadius = () =>
-            [...Array(4).keys()].map((x) => rnd(30, 85) + "%").join(" ") +
-            " / " +
-            [...Array(4).keys()].map((x) => rnd(30, 85) + "%").join(" ");
-
-        const createBlob = ({ id, x, y, color }) => {
-            const card = document.querySelector(".competition-content-card");
-            const blob = document.createElement("div");
-            blob.id = `blob-${id}`;
-            blob.classList.add("competition-content-blob");
-            blob.style.top = `${y}%`;
-            blob.style.left = `${x}%`;
-            blob.style.backgroundColor = color;
-            blob.style.scale = rnd(1.25, 2);
-            blob.style.borderRadius = rndBorderRadius();
-            card.appendChild(blob);
-            animateBlob(id);
-        };
-
-        const animateBlob = (id) => {
-            anime({
-                targets: `#blob-${id}`,
-                translateX: () => `+=${rnd(-25, 25)}`,
-                translateY: () => `+=${rnd(-25, 25)}`,
-                borderRadius: () => rndBorderRadius(),
-                rotate: () => rnd(-25, 25),
-                opacity: () => rnd(0.4, 0.8),
-                delay: () => rnd(0, 1000),
-                scale: () => rnd(1.25, 2),
-                // direction: 'alternate',
-                // loop: 1,
-                duration: 2000,
-                easing: "linear",
-                complete: (anim) => animateBlob(id)
-                // complete: anim => { anim.restart(); },
-            }).play();
-            // console.log("working")
-        };
-
-        const genBlobs = () => {
-            const card = document.querySelector(".competition-content-card");
-            card.innerHTML = "";
-            [...Array(25).keys()].map((id) => {
-                const x = rnd(25, 75);
-                const y = rnd(25, 75);
-                const color = colorsBlob[rnd(0, colorsBlob.length)];
-                createBlob({ x, y, color, id });
-            });
-            console.log("genBlobs")
-        };
-
-        genBlobs();
-    </script> -->
     <script src="textOnScroll.js"></script>
-
+    <script src="gsap2.js"></script>
 </body>
 
 </html>

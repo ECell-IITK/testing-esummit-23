@@ -262,7 +262,7 @@ background-clip: text;
 }
 
 .nav-get-merchandise::after {
-    content: "Get Merchandise";
+    content: "Merchandise";
     /* border: 2px solid red; */
     line-height: 60px;
     position: absolute;

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&family=Oxanium:wght@800&display=swap');
 
 * {
     box-sizing: border-box;
@@ -156,6 +157,7 @@ body::-webkit-scrollbar-thumb:active {
     backdrop-filter: blur(12px);
     visibility: hidden;
     overflow: hidden;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .header-nav img{
@@ -192,11 +194,17 @@ body::-webkit-scrollbar-thumb:active {
     /* padding-left: 20px; */
     margin-left: 30px;
     width: fit-content;
+    font-size: 30px;
+
+    /* background: linear-gradient(-91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; */
 }
 
 .header-nav li::after {
     content: "";
-    font-size: 20px;
+    font-size: 30px;
     display: block;
     width: 80%;
     margin-left: 12px;
@@ -210,7 +218,7 @@ body::-webkit-scrollbar-thumb:active {
     text-decoration: none;
     margin-left: 24px;
     color: whitesmoke;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 60px;
     font-weight: 500;
     cursor: pointer;
@@ -223,17 +231,16 @@ body::-webkit-scrollbar-thumb:active {
     transform: translate(calc(100vw - 250px));
     }
     .header-nav a{
-        font-size: 24px;
+        font-size: 18px;
     }
     .header-nav li::after{
-        font-size: 24px;
+        font-size: 18px;
     }
 }
 
 .nav-about-us::after {
     content: "About us";
     /* border: 2px solid red; */
-    font-size: 40px;
     line-height: 60px;
     position: absolute;
     top: 60px;
@@ -257,7 +264,6 @@ background-clip: text;
 .nav-get-merchandise::after {
     content: "Get Merchandise";
     /* border: 2px solid red; */
-    font-size: 40px;
     line-height: 60px;
     position: absolute;
     top: 60px;
@@ -284,7 +290,6 @@ background-clip: text;
 .nav-speakers::after {
     content: "Speakers";
     /* border: 2px solid red; */
-    font-size: 40px;
     line-height: 60px;
     position: absolute;
     top: 60px;
@@ -311,7 +316,6 @@ background-clip: text;
 .nav-contact-us::after {
     content: "Contact Us";
     /* border: 2px solid red; */
-    font-size: 40px;
     line-height: 60px;
     position: absolute;
     top: 60px;
@@ -338,7 +342,6 @@ background-clip: text;
 .nav-main-site::after {
     content: "Main Site";
     /* border: 2px solid red; */
-    font-size: 40px;
     line-height: 60px;
     position: absolute;
     top: 60px;
@@ -365,7 +368,6 @@ background-clip: text;
 .nav-competitions::after {
     content: "Competitions";
     /* border: 2px solid red; */
-    font-size: 40px;
     line-height: 60px;
     position: absolute;
     top: 60px;
@@ -388,7 +390,6 @@ background-clip: text;
 .nav-workshops::after {
     content: "Workshops";
     /* border: 2px solid red; */
-    font-size: 40px;
     line-height: 60px;
     position: absolute;
     top: 60px;
@@ -425,7 +426,13 @@ background-clip: text;
 } */
 
 .logo-with-name-logo {
-    height: 36px;
+    height: 50px;
+}
+
+@media screen and (max-width:500px) {
+    .logo-with-name-logo{
+        height: 40px;
+    }
 }
 
 .button {
@@ -727,6 +734,7 @@ video::-webkit-media-controls-enclosure {
     font-style: normal;
     font-weight: 800;
     background: linear-gradient(91deg, #0277A9 0.26%, #36A0CD 39.46%, #81D5F6 76.38%, #D9D9D9 109.33%);
+    background: linear-gradient(91deg, #FFF 0.26%, #5FC6F2 39.46%, #BEEDFF 76.38%, #D9D9D9 109.33%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -949,212 +957,3 @@ video::-webkit-media-controls-enclosure {
 }
 
 /* footer */
-.footer {
-    background: radial-gradient(50% 44.06% at 50% 0%, rgba(147, 130, 255, .08) 0%, rgba(147, 130, 255, 0) 100%), #030014;
-    position: relative;
-    border-top: 1px solid rgba(255, 255, 255, .1);
-    padding: 0 32px;
-}
-
-.footer-back-to-top {
-    width: 251px;
-    height: 62px;
-    flex-shrink: 0;
-    border-radius: 6px;
-    opacity: 0.7099999785423279;
-    background: linear-gradient(144deg, rgba(236, 224, 255, 0.70) 0%, rgba(99, 50, 116, 0.00) 100%);
-    box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(25000px);
-    color: #FDFDFD;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-.footer-copyright {
-    text-align: center;
-    color: #a487fa;
-}
-
-@media screen and (min-width:750px) {
-    .footer-text {
-        font-size: 30px;
-        margin: 10px;
-        padding: 10px;
-    }
-
-    .upper-arrow {
-        width: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    button {
-        background-color: rgb(3, 0, 20);
-        border: 1px solid red;
-        border-radius: 6px;
-    }
-
-    .footer-copyright {
-        text-align: center;
-    }
-
-    .back-to-top {
-        justify-content: center;
-        display: flex;
-        margin: 30px;
-
-    }
-
-    .social {
-        display: flex;
-        justify-content: center;
-        padding: 0 230px;
-        margin: 25px;
-    }
-
-    .moto {
-        display: flex;
-        align-items: center;
-        border: 2px solid red;
-        border-radius: 25px;
-        width: max-content;
-        backdrop-filter: blur(20px);
-        background: radial-gradient(100% 100% at 28.98% 0%, rgb(0 20 255 / 96%) 0%, rgba(255, 255, 255, 0.1) 100%);
-        margin: 20px;
-        padding: 20px;
-    }
-
-    .moto-cover {
-        box-sizing: border-box;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-    }
-
-    .image {
-        padding: 0 25px;
-    }
-
-    .contacts {
-        display: flex;
-        margin: 25px;
-        justify-content: center;
-        padding: 0 30px;
-    }
-
-    .contacts750 {
-        display: none;
-    }
-
-    .icon {
-        height: 2.4rem;
-        width: 2.4rem;
-        position: relative;
-        margin: 50px 70px;
-    }
-
-    .address {
-        text-align: center;
-        font-size: 20px;
-        padding: 6px 0;
-    }
-
-    .email {
-        text-decoration: none;
-        margin: 50px 40px;
-    }
-}
-
-@media screen and (max-width:750px) {
-    .footer-text {
-        font-size: 30px;
-        margin: 10px;
-        padding: 10px;
-    }
-
-    .upper-arrow {
-        width: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    button {
-        background-color: rgb(3, 0, 20);
-        border: 1px solid red;
-        border-radius: 6px;
-    }
-
-    .footer-copyright {
-        text-align: center;
-    }
-
-    .back-to-top {
-        justify-content: center;
-        display: flex;
-        margin: 30px;
-
-    }
-
-    .social {
-        display: flex;
-        justify-content: center;
-        padding: 0 100px;
-        margin: 25px;
-    }
-
-    .moto {
-        display: flex;
-        align-items: center;
-        border: 2px solid red;
-        border-radius: 25px;
-        width: max-content;
-        backdrop-filter: blur(20px);
-        background: radial-gradient(100% 100% at 28.98% 0%, rgb(0 20 255 / 96%) 0%, rgba(255, 255, 255, 0.1) 100%);
-        margin: 20px;
-        padding: 20px;
-    }
-
-    .moto-cover {
-        box-sizing: border-box;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-    }
-
-    .image {
-        padding: 0 25px;
-    }
-
-    .contacts750 {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .contacts {
-        display: none;
-    }
-
-    .icon {
-        height: 2.4rem;
-        width: 2.4rem;
-        position: relative;
-        margin: 10px 20px;
-    }
-
-    .address {
-        text-align: center;
-        font-size: 20px;
-        padding: 6px 0;
-    }
-
-    .email {
-        text-decoration: none;
-        margin: 50px 40px;
-    }
-}

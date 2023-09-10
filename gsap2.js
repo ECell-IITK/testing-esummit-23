@@ -58,6 +58,7 @@ gsap.fromTo(
       start: "top bottom", // Change this according to your needs
       end: "bottom top", // Change this according to your needs
       scrub: true, // Enables scrubbing
+      ease:Power3.easeIn
     },
   }
 );
@@ -82,7 +83,7 @@ gsap.fromTo(
 
 gsap.fromTo(
   ".leftBackground",
-  {  y: 800 },
+  {  y: 600 },
   {
     y: 10,
     // duration: 1,
@@ -177,6 +178,7 @@ function applyAnimation() {
           start: "top bottom",
           end: "bottom top",
           scrub: true,
+          ease:"none"
         },
       }
     );
@@ -192,6 +194,7 @@ function applyAnimation() {
           start: "top bottom",
           end: "bottom top",
           scrub: true,
+          ease:"none"
         },
       }
     );
@@ -221,9 +224,10 @@ gsap.fromTo(
   { left:  "calc(50% - " + circleWidth +" / 2)" },
   {
     left: -circleWidth/2,
+    duration: 0.5,
     scrollTrigger: {
       trigger: ".main-page-workshop-home-circle",
-      toggleActions: "restart restart reverse reverse",
+      toggleActions: "restart none none none",
     },
   }
 );
@@ -231,10 +235,11 @@ gsap.fromTo(
   ".main-page-workshop-home-arc",
   { left:  "calc(50% - " + circle1Width +" / 2)" },
   {
+    duration: 0.5,
     left: -circle1Width/2,
     scrollTrigger: {
       trigger: ".main-page-workshop-home-arc",
-      toggleActions: "restart restart reverse reverse",
+      toggleActions: "restart none none none",
     },
   }
 );
@@ -242,10 +247,11 @@ gsap.fromTo(
   ".main-page-workshop-home-outer-circle2",
   { left:  "calc(50% - " + circleOuterWidth +" / 2)" },
   {
+    duration: 0.5,
     left: -circleOuterWidth/2,
     scrollTrigger: {
       trigger: ".main-page-workshop-home-outer-circle2",
-      toggleActions: "restart restart reverse reverse",
+      toggleActions: "restart none none none",
     },
   }
 );

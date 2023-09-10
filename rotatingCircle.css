@@ -264,6 +264,7 @@
 .scene1 {
     position: relative;
     transform-style: preserve-3d;
+    transform: scale(0.8);
 }
 
 .banner1 {
@@ -461,6 +462,8 @@
 .scene2 {
     position: relative;
     transform-style: preserve-3d;
+    transform: scale(0.8);
+
 }
 
 .banner2 {
@@ -656,6 +659,8 @@
 .scene3 {
     position: relative;
     transform-style: preserve-3d;
+    transform: scale(0.8);
+
 }
 
 .banner3 {

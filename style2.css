@@ -387,6 +387,14 @@ width: fit-content;
     font-size: 48px;
     text-transform: uppercase;
     text-align: center;
+    background: linear-gradient(180deg, #FFF -11.67%, #3697CF 145.83%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-align: center;
+margin: 0 auto;
+/* backdrop-filter: blur(18.5px); */
+width: fit-content;
     /* background: linear-gradient(180deg, #FFF -11.67%, #3697CF 145.83%);
     background-clip: text;
     -webkit-background-clip: text;

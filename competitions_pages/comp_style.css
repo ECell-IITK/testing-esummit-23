@@ -161,8 +161,13 @@ div::-webkit-scrollbar-thumb:active {
     padding-left: 20px;
     position: relative;
     z-index: 2;
+    
+    transition: transform 0.2s ease-in-out;
 }
 
+.comp-register-button:hover{
+    transform: scale(1.2);
+}
 .comp-register-button img {
     position: absolute;
     right: 20px;

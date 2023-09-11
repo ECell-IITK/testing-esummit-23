@@ -203,7 +203,9 @@ div::-webkit-scrollbar-thumb:active {
 
     border: 2px solid white;
     overflow-y: scroll;
+    text-shadow: #FC0 1px 0 10px;
 }
+
 
 
 
@@ -242,6 +244,7 @@ div::-webkit-scrollbar-thumb:active {
 .outline-vision-guidelines div h1{
     border-top: 2px solid white;
     border-bottom: 2px solid white;
+    text-shadow: #FC0 1px 0 3px;
 }
 
 @media screen and (max-width:1000px) {

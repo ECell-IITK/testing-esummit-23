@@ -172,12 +172,12 @@ p {
     }
 }
 #comp1{
-    background: url('./images/competitions/content-background.png');
+    background: url('./images/competitions/content-background1.jpg');
     /* background-repeat: no-repeat; */
     /* background-position-y: 200px; */
 }
 #comp2{
-    background: url('./images/competitions/content-background.png');
+    background: url('./images/competitions/content-background1.jpg');
     /* background-repeat: no-repeat; */
     background-position-y: -500px;
 }

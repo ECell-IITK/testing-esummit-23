@@ -228,6 +228,7 @@
     -webkit-text-fill-color: transparent;
     /* text-shadow: 6px 4px 4px #000; */
     width: fit-content;
+    font-weight: 800;
     /* backdrop-filter: blur(18.5px); */
 }
 
@@ -289,6 +290,7 @@
     -webkit-text-fill-color: transparent;
     /* backdrop-filter: blur(18.5px); */
     width: fit-content;
+    font-weight: 800;
 }
 
 .esummit-theme-content {
@@ -482,7 +484,7 @@
     flex-direction: column;
     overflow: hidden;
 
-    background: url("./images/workshopBackground\ \(2\).png");
+    background: url("./images/workshopbackgroundInMainPageRevised.jpg");
     background-size: cover;
     /* width: fit; */
 }

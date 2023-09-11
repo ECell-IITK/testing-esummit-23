@@ -693,7 +693,7 @@
 .panel3::before {
     position: absolute;
     left: var(--left);
-    content: "3 Product Launches";
+    content: "Several Product Launches";
     font-size: 70px;
     width: -webkit-max-content;
     width: -moz-max-content;

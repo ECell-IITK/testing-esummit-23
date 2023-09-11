@@ -238,6 +238,28 @@ background-clip: text;
     }
 }
 
+.nav-home::after{
+    content: "Home";
+    /* border: 2px solid red; */
+    line-height: 60px;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    background: #9757CF;
+    background: linear-gradient(to right, #9757CF 21%, #864AFF 50%, #7A5BCF 73%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: inherit;
+    background: linear-gradient(91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.nav-home:hover {
+    transform: translateY(-60px);
+}
+
 .nav-about-us::after {
     content: "About us";
     /* border: 2px solid red; */

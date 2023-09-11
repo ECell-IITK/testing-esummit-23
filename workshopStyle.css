@@ -153,6 +153,22 @@ body::-webkit-scrollbar-thumb {
 .empty-first-half {
     height: 100vh;
     width: 100%;
+    position: relative;
+}
+
+.scroll-down-workshop{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 120px;
+    height: 40px;
+    /* border: 2px solid white; */
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .each-workshop-description {

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
-.rotating-circles-section{
+.rotating-circles-section {
     display: flex;
     flex-flow: wrap;
     width: 100%;
@@ -8,9 +8,10 @@
     justify-content: space-evenly;
     text-transform: uppercase;
 }
+
 .rotating-circle1 {
     background-color: transparent;
-    
+
     color: #fff;
     /* min-height: 100vh; */
     display: grid;
@@ -100,7 +101,8 @@
 .panel::before {
     position: absolute;
     left: var(--left);
-    content: "60+ Startups 60+ Startups";
+    content: "60+ Startups   60+ Startups   ";
+    
     font-size: 70px;
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -278,15 +280,15 @@
     position: absolute;
     transform: translate(-50%, -50%) rotateY(var(--angle)) translateZ(190px);
     width: 50px;
-    height: 120px;
+    height: 85px;
     overflow: hidden;
     text-transform: uppercase;
-    /* background: rgba( 255, 255, 255, 0.25 ); */
-/* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
-/* backdrop-filter: blur( 4px ); */
-/* -webkit-backdrop-filter: blur( 4px ); */
-/* border-radius: 10px; */
-/* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+    background: rgba( 255, 255, 255, 0.25 );
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    /* backdrop-filter: blur( 4px ); */
+    /* -webkit-backdrop-filter: blur( 4px ); */
+    /* border-radius: 10px; */
+    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
     /* background-color: grey; */
     /* background: rgba(255, 255, 255, 0.25); */
     /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
@@ -302,7 +304,6 @@
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    /* color: hsl(var(--hue), 75%, 75%); */
 }
 
 .panel1:nth-child(1) {
@@ -489,8 +490,10 @@
     position: absolute;
     transform: translate(-50%, -50%) rotateY(var(--angle)) translateZ(190px);
     width: 50px;
-    height: 120px;
+    height: 85px;
     overflow: hidden;
+    background: rgba( 255, 255, 255, 0.25 );
+
 }
 
 .panel2::before {
@@ -501,7 +504,6 @@
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    /* color: hsl(var(--hue), 75%, 75%); */
 }
 
 .panel2:nth-child(1) {
@@ -686,14 +688,16 @@
     position: absolute;
     transform: translate(-50%, -50%) rotateY(var(--angle)) translateZ(190px);
     width: 50px;
-    height: 120px;
+    height:85px;
     overflow: hidden;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
 .panel3::before {
     position: absolute;
     left: var(--left);
-    content: "Several Product Launches";
+    content: "Several Product Launches   ";
     font-size: 70px;
     width: -webkit-max-content;
     width: -moz-max-content;

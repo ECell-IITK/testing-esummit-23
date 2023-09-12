@@ -463,12 +463,17 @@ background-clip: text;
     border-radius: 8px;
     color: #f4f0ff;
     display: block;
-    padding: 8px 16px;
     position: relative;
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
     font-feature-settings: "ss01" on, "cv10" on, "calt" off, "liga" off;
+
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button-primary {

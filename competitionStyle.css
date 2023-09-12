@@ -18,42 +18,62 @@ p {
     align-items: center;
     justify-content: center;
     width: 100%;
+
+
 }
 
 .competition-heading img {
     margin-top: 40px;
     max-width: 700px;
 }
+
 @media screen and (max-width:700px) {
-    .competition-heading img{
+    .competition-heading img {
         max-width: 500px;
         width: 100%;
     }
 }
-.competition-content-outer{
+
+.competition-content-outer {
     position: relative;
     font-family: 'Orbitron', sans-serif;
     font-size: 48px;
     /* box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5); */
 }
 
-.competition-content-outer-heading{
+.competition-content-outer-heading {
     text-align: center;
+
+    /* text-shadow: 6px 4px 4px #000; */
+    font-family: Orbitron;
+    /* font-size: 48px; */
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #FFF -11.67%, #3697CF 145.83%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(6px 4px 4px #000);
+
+
 }
 
 @media screen and (max-width:800px) {
-    .competition-content-outer-heading{
+    .competition-content-outer-heading {
         font-size: 30px;
     }
 }
 
-.competition-content-card{
+.competition-content-card {
     position: absolute;
     top: 0;
     height: 100%;
     width: 100%;
 }
-.competition-content-blob{
+
+.competition-content-blob {
     opacity: 0.3;
     background: #85def285;
     height: 25%;
@@ -64,6 +84,7 @@ p {
     /*   mix-blend-mode: color; */
     position: absolute;
 }
+
 .competition-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -114,13 +135,15 @@ p {
     width: 70%;
     z-index: 2;
 }
-.competition-content-section-right-blur-background{
+
+.competition-content-section-right-blur-background {
     height: 100%;
     width: 100%;
     position: absolute;
     /* left:0; */
     background: rgba(47, 76, 92, 0.60);
 }
+
 .competition-read-more {
     width: 152px;
     height: 38px;
@@ -142,61 +165,74 @@ p {
 
     cursor: pointer;
 }
-.competition-content:nth-child(even) > .competition-content-section{
+
+.competition-content:nth-child(even)>.competition-content-section {
     flex-direction: row-reverse;
 }
-.competition-content:nth-child(odd) > .competition-content-section > .competition-content-section-right > .competition-content-section-right-blur-background{
+
+.competition-content:nth-child(odd)>.competition-content-section>.competition-content-section-right>.competition-content-section-right-blur-background {
     left: 0;
 }
-.competition-content:nth-child(even) > .competition-content-section > .competition-content-section-right > .competition-content-section-right-blur-background{
+
+.competition-content:nth-child(even)>.competition-content-section>.competition-content-section-right>.competition-content-section-right-blur-background {
     right: 0;
 }
-.competition-content:nth-child(1) > .competition-content-section{
+
+.competition-content:nth-child(1)>.competition-content-section {
     background-position: bottom 0px;
 }
+
 @media screen and (max-width:700px) {
-    .competition-content > .competition-content-section{
+    .competition-content>.competition-content-section {
         flex-direction: column-reverse;
         height: fit-content;
     }
-    .competition-content-section-right{
+
+    .competition-content-section-right {
         width: 100%;
         height: 300px;
     }
-    .competition-content-section-left{
+
+    .competition-content-section-left {
         width: 100%;
         height: 300px;
     }
-    .competition-content:nth-child(even) > .competition-content-section{
+
+    .competition-content:nth-child(even)>.competition-content-section {
         flex-direction: column-reverse;
     }
 }
-#comp1{
+
+#comp1 {
     background: url('./images/competitions/content-background1.jpg');
     /* background-repeat: no-repeat; */
     /* background-position-y: 200px; */
 }
-#comp2{
+
+#comp2 {
     background: url('./images/competitions/content-background1.jpg');
     /* background-repeat: no-repeat; */
     background-position-y: -500px;
 }
-#comp3{
+
+#comp3 {
     background: url('./images/competitions/content-background-2.png');
     /* background-repeat: no-repeat; */
-    background-position-x:center;
+    background-position-x: center;
 
 }
-#comp4{
+
+#comp4 {
     background: url('./images/competitions/content-background-2.png');
     background-position-y: -500px;
     /* background-repeat: no-repeat; */
-    background-position-x:center;
+    background-position-x: center;
 
 }
-#comp5{
+
+#comp5 {
     background: url('./images/competitions/content-background-2.png');
     background-position-y: -680px;
     /* background-repeat: no-repeat; */
-    background-position-x:center;
+    background-position-x: center;
 }

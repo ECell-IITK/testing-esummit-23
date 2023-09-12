@@ -59,12 +59,21 @@
     <link rel="stylesheet" href="cursor.css">
     <link rel="stylesheet" href="rotatingCircle.css">
     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="preloader.css">
     <script src="particle.min.js"></script>
+    <script src="preloader.js"></script>
+
     <!-- stats.js lib -->
     <!-- <script src="http://threejs.org/examples/js/libs/stats.min.js"></script> -->
 </head>
 
 <body>
+    <div id="prelaoder">
+        <video autoplay muted>
+          <source src="./videos/preloaderAppropriateSize.mp4" type="video/mp4">
+          Your browser does not support html video
+        </video>
+    </div>
     <div class="circle"></div>
     <div class="circle"></div>
     <div class="circle"></div>
@@ -682,6 +691,8 @@
             </div>
         </footer>
     </div>
+    <script src="preloader.js"></script>
+
     <script>
         let hamburgerIcon = document.querySelector(".header-toggle")
         let nav = document.querySelector(".header-nav")

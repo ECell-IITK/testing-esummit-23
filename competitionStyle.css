@@ -43,7 +43,7 @@ p {
 
 .competition-content-outer-heading {
     text-align: center;
-
+    padding: 20px;
     /* text-shadow: 6px 4px 4px #000; */
     font-family: Orbitron;
     /* font-size: 48px; */

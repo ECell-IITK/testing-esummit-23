@@ -390,6 +390,7 @@
 
 .rotating-circles-section {
     position: relative;
+    margin-bottom: 10px;
 }
 
 .downtown {
@@ -703,6 +704,10 @@
     font-family: 'Orbitron', sans-serif;
     width: fit-content;
     margin: 0 auto;
+}
+
+.main-page-speaker-card img{
+    width: 300px;
 }
 
 @media screen and (max-width:600px) {

@@ -15,3 +15,9 @@
   body.loaded #prelaoder {
     display: none;
   }
+
+  @media screen and (max-width:700px) {
+    body.loaded #prelaoder {
+      display: none;
+    }
+  }

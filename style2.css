@@ -528,7 +528,7 @@
     flex-direction: column;
     overflow: hidden;
 
-    background: url("./images/workshopbackgroundInMainPageRevised.jpg");
+    background: url("./images/workshopBackground.jpg");
     background-size: cover;
     /* width: fit; */
 }

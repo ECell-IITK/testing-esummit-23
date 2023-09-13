@@ -52,6 +52,7 @@
     </style>
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/zub3tbp.css">
+    <link rel="stylesheet" href="flip.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="particle.css">
@@ -70,8 +71,8 @@
 <body>
     <div id="prelaoder">
         <video autoplay muted>
-          <source src="./videos/preloaderAppropriateSize.mp4" type="video/mp4">
-          Your browser does not support html video
+            <source src="./videos/preloaderAppropriateSize.mp4" type="video/mp4">
+            Your browser does not support html video
         </video>
     </div>
     <div class="circle"></div>
@@ -260,7 +261,7 @@
                     </div>
                 </div>
             </div>
-            <div class="rotating-circles-section">
+            <!-- <div class="rotating-circles-section">
                 <div class="rotating-circle1">
                     <div class="scene1">
                         <div class="banner1">
@@ -354,24 +355,25 @@
                         <div class="screen3"></div>
                     </div>
                 </div>
+            </div> -->
+            <div class="scene">
+
+                <div class="card">
+                    <div class="card__face card__face--front">
+                        <img src="./images/statsReducedSize.png" /> 
+                    </div>
+                    <div class="card__face card__face--back">
+                        <img src="./images/statsReducedSize.png" />
+                    </div>
+                </div>
+
             </div>
             <div class="what-we-do">
                 <div class="what-we-do-heading">
                     WHAT WE DO
                 </div>
                 <div class="what-we-do-content">
-                    <div class="what-we-do-card">
-                        <img src="./images/networkingDinner.png" alt="" srcset="" loading="lazy">
-                        <div class="read-more-what-we-do">
-                            <a href="https://www.ecelliitk.org">read more</a>
-                        </div>
-                        <div class="what-we-do-card-heading">networking dinner</div>
 
-                        <div class="what-we-do-card-content">
-                            E-Cell IIT Kanpur holds a networking dinner with the aim of not just connecting people but
-                            connecting people with ideas and people with opportunities.
-                        </div>
-                    </div>
                     <div class="what-we-do-card">
                         <img src="./images/expo.png" alt="" srcset="" loading="lazy">
                         <div class="read-more-what-we-do" style="left:40px">
@@ -395,6 +397,18 @@
                             UpStart being the flagship pitching event of E-Cell has always catered to the budding
                             startups of the nation. With 500+ registrations, UpStart has managed to sow the seeds of
                             entrepreneurship across the country.
+                        </div>
+                    </div>
+                    <div class="what-we-do-card">
+                        <img src="./images/networkingDinner.png" alt="" srcset="" loading="lazy">
+                        <div class="read-more-what-we-do">
+                            <a href="https://www.ecelliitk.org">read more</a>
+                        </div>
+                        <div class="what-we-do-card-heading">networking dinner</div>
+
+                        <div class="what-we-do-card-content">
+                            E-Cell IIT Kanpur holds a networking dinner with the aim of not just connecting people but
+                            connecting people with ideas and people with opportunities.
                         </div>
                     </div>
                 </div>
@@ -557,7 +571,7 @@
         <div class="main-page-speaker-section">
             <div id="particles-js"></div>
 
-            <div class="main-page-speaker-section-heading">SPEAKERS</div>
+            <div class="main-page-speaker-section-heading">PAST SPEAKERS</div>
             <div class="main-page-speaker-section-content">
                 <div class="main-page-speaker-card">
                     <img src="./images/speakers/Group 2609.png" alt="" srcset="" loading="lazy">
@@ -708,6 +722,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="textOnScroll.js"></script>
     <script src="gsap2.js"></script>
+    <script src="flip.js"></script>
 </body>
 
 </html>

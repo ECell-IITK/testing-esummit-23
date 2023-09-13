@@ -1,0 +1,69 @@
+/*  */
+
+
+
+.scene {
+    width: 100%;
+    margin: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 125px;
+    display: flex;
+    justify-content: space-between;
+    perspective: 800px;
+    position: relative;
+    z-index: 4;
+}
+
+.scene .card {
+    position: relative;
+    width: 100%;
+    /* min-height: 100px; */
+    color: white;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    transform-style: preserve-3d;
+    z-index: 4;
+}
+
+/* .scene .card:hover {
+    transform: rotateX(0.5turn);
+} */
+
+.scene .card .card__face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: ease-in-out;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4)); */
+}
+
+.scene .card .card__face img {
+    width: 80%;
+    /* margin: 10px; */
+    /* height: 80px; */
+    /* -o-object-fit: cover; */
+    /* object-fit: cover; */
+}
+
+.scene .card .card__face--back {
+    transform: rotateX(0.5turn);
+}
+
+@media screen and (max-width:900px) {
+    .scene .card .card__face img{
+        width: 95%;
+    }
+}
+@media screen and (max-width:700px) {
+    .scene{
+        height: calc(100vw * 3 / 34);
+    }
+}

@@ -705,7 +705,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     backdrop-filter: blur(18.5px);
-    font-size: 90px;
+    font-size: 60px;
     text-align: center;
     font-family: 'Orbitron', sans-serif;
     width: fit-content;
@@ -759,3 +759,6 @@
     line-height: normal;
     text-transform: uppercase;
 }
+
+
+

@@ -187,6 +187,12 @@
 
 }
 
+@media screen and (max-width:800px) {
+    .esummit-aftermovie video{
+        transform: translateY(55px);
+    }
+}
+
 .videoFrameOfAfterMovie {
     position: absolute;
     max-width: 450px;

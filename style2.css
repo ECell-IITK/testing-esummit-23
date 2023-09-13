@@ -41,19 +41,71 @@
     z-index: 3;
 }
 
-.typeface {
+.typeface-packet{
     position: absolute;
-    top: calc(50% - 100px);
+    width: 100%;
+    top: 35%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.typeface {
+    position: relative;
+    top: calc(40% - 100px);
     width: 50%;
-    left: calc(50% - 25%);
+    /* left: calc(50% - 25%); */
     z-index: 10;
     transition: transform 0.4s ease-in-out;
+}
+
+.text-for-dates{
+    position: relative;
+    /* top: calc(40% + 100vw/19); */
+    width: 100%;
+    text-align: center;
+    /* left: calc(50% - 25%); */
+    z-index: 10;
+
+    text-align: center;
+    padding: 20px;
+    /* text-shadow: 6px 4px 4px #000; */
+    font-family: Orbitron;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #FFF -11.67%, #3697CF 145.83%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(6px 4px 4px #000);
+}
+.register-now-image{
+    position: relative;
+    /* top: calc(40% + 100vw/9); */
+    /* top: calc(75% - 100px); */
+    width: 40%;
+    width: 400px;
+    /* left: calc(50% - 200px); */
+    z-index: 10;
 }
 
 @media screen and (max-width:700px) {
     .typeface {
         width: 90%;
-        left: calc(50% - 45%)
+        /* left: calc(50% - 45%) */
+    }
+    .text-for-dates{
+        font-size: 22px;
+    }
+
+    .register-now-image{
+        max-width: 250px;
+        margin: 0 auto;
     }
 }
 
@@ -759,6 +811,5 @@
     line-height: normal;
     text-transform: uppercase;
 }
-
 
 

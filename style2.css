@@ -613,6 +613,12 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    background: linear-gradient(180deg, #FFF -11.67%, #3697CF 145.83%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(6px 4px 4px #000);
     /* backdrop-filter: blur(18.5px); */
 
     position: relative;
@@ -757,6 +763,11 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     backdrop-filter: blur(18.5px);
+    background: linear-gradient(180deg, #FFF -11.67%, #3697CF 145.83%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(6px 4px 4px #656565);  
     font-size: 60px;
     text-align: center;
     font-family: 'Orbitron', sans-serif;

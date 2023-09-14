@@ -92,7 +92,9 @@
     width: 400px;
     /* left: calc(50% - 200px); */
     z-index: 10;
+    transition: transform 0.2s ease-in-out;
 }
+
 
 @media screen and (max-width:700px) {
     .typeface {
@@ -102,11 +104,15 @@
     .text-for-dates{
         font-size: 22px;
     }
-
+    
     .register-now-image{
         max-width: 250px;
         margin: 0 auto;
     }
+}
+
+.register-now-image:hover{
+    transform: scale(1.05);
 }
 
 .typeface:hover {
@@ -776,7 +782,7 @@
 }
 
 .main-page-speaker-card img{
-    width: 250px;
+    width: 230px;
 }
 
 @media screen and (max-width:600px) {

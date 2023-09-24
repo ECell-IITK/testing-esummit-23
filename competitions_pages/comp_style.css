@@ -166,7 +166,7 @@ div::-webkit-scrollbar-thumb:active {
 }
 
 .comp-register-button:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .comp-register-button img {
     position: absolute;

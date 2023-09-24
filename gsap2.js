@@ -227,7 +227,7 @@ gsap.fromTo(
     duration: 0.5,
     scrollTrigger: {
       trigger: ".main-page-workshop-home-circle",
-      toggleActions: "restart none none none",
+      toggleActions: "restart restart restart restart",
     },
   }
 );
@@ -239,7 +239,7 @@ gsap.fromTo(
     left: -circle1Width/2,
     scrollTrigger: {
       trigger: ".main-page-workshop-home-arc",
-      toggleActions: "restart none none none",
+      toggleActions: "restart restart restart restart",
     },
   }
 );
@@ -251,7 +251,7 @@ gsap.fromTo(
     left: -circleOuterWidth/2,
     scrollTrigger: {
       trigger: ".main-page-workshop-home-outer-circle2",
-      toggleActions: "restart none none none",
+      toggleActions: "restart restart restart restart",
     },
   }
 );

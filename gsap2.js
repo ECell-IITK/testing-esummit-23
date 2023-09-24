@@ -168,7 +168,7 @@ function applyAnimation() {
   if (window.innerWidth >= 1000) {
     gsap.fromTo(
       ".buildings",
-      { y: 0, scale: 0.5 },
+      { y: 0, scale: 1 },
       {
         y: -200,
         scale: 1.5,

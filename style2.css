@@ -186,7 +186,7 @@
 }
 
 .buildings {
-    transform: scale(1.5);
+    /* transform: scale(1.5); */
 }
 
 @media screen and (max-width:1000px) {
@@ -247,7 +247,7 @@
 
 @media screen and (max-width:800px) {
     .esummit-aftermovie video{
-        transform: translateY(55px);
+        transform: translateY(47px);
     }
 }
 

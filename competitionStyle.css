@@ -236,3 +236,10 @@ p {
     /* background-repeat: no-repeat; */
     background-position-x: center;
 }
+
+#comp6 {
+    background: url('./images/competitions/content-background-2.png');
+    background-position-y: -680px;
+    /* background-repeat: no-repeat; */
+    background-position-x: center;
+}

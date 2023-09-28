@@ -120,6 +120,73 @@ div::-webkit-scrollbar-thumb:active {
     transition: all 1s;
 }
 
+#comp-intro-child-1{
+    height: 100%;
+    width: 100%;
+    background: url("./images/shubham-dhage-v0VjjYYFjOg-unsplash.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 1;
+    transition: all 1s;
+}
+#comp-intro-child-2{
+    height: 100%;
+    width: 100%;
+    background: url("./images/futuristic-sci-fi-space-tunnel-passageway-with-glowing-shiny-lights.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 1;
+    transition: all 1s;
+}
+#comp-intro-child-3{
+    height: 100%;
+    width: 100%;
+    background: url("./images/futuristic-sci-fi-space-tunnel-passageway-with-glowing-shiny-lights.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 1;
+    transition: all 1s;
+}
+#comp-intro-child-4{
+    height: 100%;
+    width: 100%;
+    background: url("./images/sellYourSole.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 1;
+    transition: all 1s;
+}
+#comp-intro-child-5{
+    height: 100%;
+    width: 100%;
+    background: url("./images/technology-green-lines-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 1;
+    transition: all 1s;
+}
+#comp-intro-child-6{
+    height: 100%;
+    width: 100%;
+    background: url("./images/cosmic-environment-with-colorful-neon-laser-lights.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 1;
+    transition: all 1s;
+}
+
 .comp-intro-child:hover {
     transform: scale(1.2);
 }
@@ -355,4 +422,8 @@ div::-webkit-scrollbar-thumb:active {
 
 [role=tab][aria-selected=true] {
     opacity: 1;
+}
+
+.comp-guidelines{
+    list-style-type: square;
 }

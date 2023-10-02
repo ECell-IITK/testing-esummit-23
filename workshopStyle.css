@@ -182,6 +182,11 @@ body::-webkit-scrollbar-thumb {
     padding: 10px;
 }
 
+.each-workshop-description img{
+    width:50%;
+    height: 450px;
+}
+
 @media screen and (max-width:900px) {
     .workshop-description {
         width: 100%;

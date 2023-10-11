@@ -52,9 +52,10 @@
     position: absolute;
     bottom: 10px;
     text-transform: uppercase;
+    font-family: fantasy;
 }
 
 .sponsor-box img{
-    width: 82%;
+    width: 55%;
     padding-top: 5%;
 }

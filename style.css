@@ -77,10 +77,11 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 @media screen and (max-width:900px) {
-    .circle{
+    .circle {
         display: none;
     }
 }
+
 .header {
     padding: 0 20px;
     -webkit-backdrop-filter: blur(16px);
@@ -160,7 +161,7 @@ body::-webkit-scrollbar-thumb:active {
     font-family: 'Orbitron', sans-serif;
 }
 
-.header-nav img{
+.header-nav img {
     position: absolute;
     top: 0;
     background: transparent;
@@ -226,19 +227,21 @@ background-clip: text;
 }
 
 @media screen and (max-width:600px) {
-    .header-nav-active{
+    .header-nav-active {
         width: 250px;
-    transform: translate(calc(100vw - 250px));
+        transform: translate(calc(100vw - 250px));
     }
-    .header-nav a{
+
+    .header-nav a {
         font-size: 18px;
     }
-    .header-nav li::after{
+
+    .header-nav li::after {
         font-size: 18px;
     }
 }
 
-.nav-home::after{
+.nav-home::after {
     content: "Home";
     /* border: 2px solid red; */
     line-height: 60px;
@@ -251,9 +254,9 @@ background-clip: text;
     -webkit-text-fill-color: transparent;
     font-style: inherit;
     background: linear-gradient(91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .nav-home:hover {
@@ -273,13 +276,37 @@ background-clip: text;
     -webkit-text-fill-color: transparent;
     font-style: inherit;
     background: linear-gradient(91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-    
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
+
+
 .nav-about-us:hover {
+    transform: translateY(-60px);
+}
+
+.nav-sponsor::after {
+    content: "Sponsors";
+    /* border: 2px solid red; */
+    line-height: 60px;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    background: #9757CF;
+    background: linear-gradient(to right, #9757CF 21%, #864AFF 50%, #7A5BCF 73%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: inherit;
+    background: linear-gradient(91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-sponsor:hover {
     transform: translateY(-60px);
 }
 
@@ -296,13 +323,13 @@ background-clip: text;
     -webkit-text-fill-color: transparent;
     font-style: inherit;
     background: linear-gradient(91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background: linear-gradient(91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .nav-get-merchandise:hover {
@@ -322,13 +349,13 @@ background-clip: text;
     -webkit-text-fill-color: transparent;
     font-style: inherit;
     background: linear-gradient(91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background: linear-gradient(91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .nav-speakers:hover {
@@ -348,13 +375,13 @@ background-clip: text;
     -webkit-text-fill-color: transparent;
     font-style: inherit;
     background: linear-gradient(91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background: linear-gradient(91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .nav-contact-us:hover {
@@ -374,13 +401,13 @@ background-clip: text;
     -webkit-text-fill-color: transparent;
     font-style: inherit;
     background: linear-gradient(91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background: linear-gradient(91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .nav-main-site:hover {
@@ -400,9 +427,9 @@ background-clip: text;
     -webkit-text-fill-color: transparent;
     font-style: inherit;
     background: linear-gradient(91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .nav-competitions:hover {
@@ -422,9 +449,9 @@ background-clip: text;
     -webkit-text-fill-color: transparent;
     font-style: inherit;
     background: linear-gradient(91deg, #02435F -228.17%, #07A -130.82%, #008ECB -17.5%, #FFF 78.25%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .nav-workshops:hover {
@@ -452,7 +479,7 @@ background-clip: text;
 }
 
 @media screen and (max-width:500px) {
-    .logo-with-name-logo{
+    .logo-with-name-logo {
         height: 40px;
     }
 }
@@ -482,9 +509,9 @@ background-clip: text;
     text-decoration: none;
     transition: .2s all cubic-bezier(.6, .6, 0, 1);
     border-radius: 8px;
-border: 1px solid #FFF;
-background: linear-gradient(90deg, rgba(6, 117, 166, 0.05) -1.63%, rgba(6, 117, 166, 0.05) -1.62%, rgba(125, 217, 255, 0.05) 100%);
-backdrop-filter: blur(48.5px);
+    border: 1px solid #FFF;
+    background: linear-gradient(90deg, rgba(6, 117, 166, 0.05) -1.63%, rgba(6, 117, 166, 0.05) -1.62%, rgba(125, 217, 255, 0.05) 100%);
+    backdrop-filter: blur(48.5px);
 }
 
 .button-primary:hover {
@@ -800,7 +827,7 @@ video::-webkit-media-controls-enclosure {
 .about img {
     position: absolute;
     top: 0;
-    
+
     width: 1600px;
     left: calc(50% - 800px);
 }

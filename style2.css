@@ -659,7 +659,7 @@
     /* flex-wrap: wrap; */
 }
 
-.workshop-downtown-cotent-content-card a {
+.workshop-downtown-cotent-content-card a.link_more{
     width: 152px;
     height: 38px;
     flex-shrink: 0;
